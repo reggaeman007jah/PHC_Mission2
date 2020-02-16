@@ -14,5 +14,4 @@ execVM "VAMP_initParams\vampInitParams.sqf";
 sleep 2;
 execVM "voiceActivatedArty\VAA_Init.sqf";
 
-// test
 

@@ -18,7 +18,6 @@ if (VACF_numericalInputbool) then {
 		_ehRemove1 = (findDisplay 46) displayRemoveEventHandler ['keyDown', rgg_vacf_cnl];
 		VACF_numericalInputbool = false;
 		execVM 'voiceActivatedCoordFinder\VACF_Init.sqf';
-
 	}"];
 
 	execVM 'voiceActivatedCoordFinder\RSCnums\titleDisplay.sqf';
@@ -34,7 +33,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 0;
 		};
-
 	}"];
 
 	rgg_vacf_kd1 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 79) then {
@@ -47,8 +45,7 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 1;
-		};
-		
+		};		
 	}"];
 
 	rgg_vacf_kd2 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 80) then {
@@ -62,7 +59,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 2;
 		};
-
 	}"];
 
 	rgg_vacf_kd3 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 81) then {
@@ -76,7 +72,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 3;
 		};
-
 	}"];
 
 	rgg_vacf_kd4 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 75) then {
@@ -90,7 +85,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 4;
 		};
-
 	}"];
 
 	rgg_vacf_kd5 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 76) then {
@@ -103,8 +97,7 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 5;
-		};
-		
+		};		
 	}"];
 
 	rgg_vacf_kd6 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 77) then {
@@ -118,7 +111,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 6;
 		};
-
 	}"];
 
 	rgg_vacf_kd7 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 71) then {
@@ -131,8 +123,7 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 7;
-		};
-		
+		};		
 	}"];
 
 	rgg_vacf_kd8 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 72) then {
@@ -145,8 +136,7 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 8;
-		};
-		
+		};	
 	}"];
 
 	rgg_vacf_kd9 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 73) then {
@@ -160,7 +150,6 @@ if (VACF_numericalInputbool) then {
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 9;
 		};
-
 	}"];
 };
 		
