@@ -13,8 +13,8 @@ notes:
 waitUntil {!isNull (uiNameSpace getVariable "VAAS_n1")};
 // _n1 = VACF_Heading;
 // _n2 = VACF_Distance;
-_n1 = latCoordInputBool;
-_n2 = lonCoordInputBool;
+_n1 = splashCoordsLat;
+_n2 = splashCoordsLon;
 // _n3 = VAAS_TYPE;
 
 _display = uiNameSpace getVariable "VAAS_n1";
