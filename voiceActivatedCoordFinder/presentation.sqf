@@ -12,7 +12,6 @@ notes:
 I need to change the name of this file, to have VACF prefix, but need to check for potential breakages before doing so 
 */
 
-
 _lan = _this select 0;
 _lon = _this select 1;
 _stringTestLan	= [_lan] joinString "";
@@ -36,7 +35,7 @@ if (_countTestLon == 4) then {
 	_fiveNum = "0" + _stringTestLon;
 	_stringTestLon = _fiveNum;
 };
- 
+
 if (_countTestLon == 3) then {
 	_fiveNum = "00" + _stringTestLon;
 	_stringTestLon = _fiveNum;

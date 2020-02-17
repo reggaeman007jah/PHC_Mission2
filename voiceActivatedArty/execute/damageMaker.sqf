@@ -49,7 +49,5 @@ _units = allUnits inAreaArray "blast2";
 	sleep 0.1;
 } forEach _units;
 
-
-
 deleteMarker "blast1";
 deleteMarker "blast2";

@@ -17,9 +17,6 @@ _n1 = latCoordInputBool;
 _n2 = lonCoordInputBool;
 // _n3 = VAAS_TYPE;
 
-// the above have no confirmed relation with anything!!!!
-// make sure the above vafs actually exist
-
 _display = uiNameSpace getVariable "VAAS_n1";
 _setText = _display displayCtrl 99001;
 _setText ctrlSetStructuredText (parseText format ["LAT: %1 LON: %2", _n1, _n2]);
