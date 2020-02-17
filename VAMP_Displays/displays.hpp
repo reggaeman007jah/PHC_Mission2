@@ -42,8 +42,16 @@ Future-Self Notes:
 - IDD seems to be th same throughout, only the IDCs need to be unique
 
 IDC Convention 
-Here I will document numbering conventions for IDCs 
+VACF    1001
+VACF_n1 9900
+VACF_h1 9901
+VAAS_h1 99001
 
+Layout Guide
+VACF 
+VACF_n1 
+VACF_h1 
+VAAS_h1 
 */
 
 class RscTitles {
@@ -60,9 +68,9 @@ class RscTitles {
     // ---------------------------------------------------------------------------------------------------------
     // ------------- Default Class - Start
     // ---------------------------------------------------------------------------------------------------------
-    //
+    
     // ------------- <><><><><>
-    //
+    
     // ---------------------------------------------------------------------------------------------------------
     // ------------- VACF Classes - Start
     // ---------------------------------------------------------------------------------------------------------
@@ -194,9 +202,9 @@ class RscTitles {
     // ---------------------------------------------------------------------------------------------------------
     // ------------- VACF Classes - End
     // ---------------------------------------------------------------------------------------------------------
-    //
+
     // ------------- <><><><><>
-    //
+
     // ---------------------------------------------------------------------------------------------------------
     // ------------- VAAS Classes - Start
     // ---------------------------------------------------------------------------------------------------------
@@ -209,13 +217,57 @@ class RscTitles {
     - radius 
     - confirm 
     - close / repeat / adjust fire 
-    - it needs to work well with VACF - this is all part of the same system 
+    - it needs to work well with VACF - this is all part of the same system - 
     */
-    // VAAS is ?
-    // VACF - ?
-    // VACF_n1 - ?
-    // VACF_h1 - ?
+    // VAAS_h1 shows that the system is live, online - top center of screen "Artillery Available" / Artillery Offline"
+    // I should copy the VACF system of showing text and values in one element 
+    // System should have different formats depending on type of ord requested
+    // Hellfire: 10Grid: [] / CONFIRM?
+    // HE Artillery: 8Grid [] / Radius [] / Rounds []
+    // Smoke: 8Grid [] / Number [] / Colour [] / Area [] 
+
     // ---------------------------------------------------------------------------------------------------------
+
+    class VAAS_n1 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VAAS_n1";
+		onLoad                      = "with uiNameSpace do { VAAS_n1 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99001;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.400 * safezoneW + safezoneX;
+				y                   = 0.150 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
     class VAAS_h1 {
         idd                         = 1000000;
         movingEnable                = 0;
@@ -225,12 +277,12 @@ class RscTitles {
         fadein                      = 0.1;
         fadeout                     = 2;
         name                        = "VAAS_h1";
-		onLoad                      = "with uiNameSpace do { VACF_h1 = _this select 0 }";
+		onLoad                      = "with uiNameSpace do { VAAS_h1 = _this select 0 }";
         class controls {
 		    class structuredText {
                 access              = 0;
                 type                = 13;
-                idc                 = 9901666; // added 666 for now ... I need a better documented convention for IDCs
+                idc                 = 99002; 
                 style               = 0x00;
                 lineSpacing         = 1;
 				x                   = 0.400 * safezoneW + safezoneX;
@@ -264,7 +316,8 @@ class RscTitles {
 
 
 
-
+/*
+Test 17 Feb - if this code works then delete everything below, as the focus in this mission is just VACF and VAAS 
 
 
 
