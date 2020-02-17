@@ -1,274 +1,77 @@
-// note, in order to use this stuff in a mission like Liberation, you need to copy the content below and paste within the mission's own class RscTitles { paste here }..
-
 /*
+Old notes:
 I believe I can now remove some of these blocks, but do your research first!!
+note, in order to use this stuff in a mission like Liberation, you need to copy the content below and paste within the mission's own class RscTitles { paste here }..
 
+------
+New Notes 
+
+17 Feb 2020
+
+This .hpp file will aim to deliver 'just' VACF and VAAS UI elements. It will also aim to deliver class inheritance.
+
+I am commenting out debug classes, as I believe them to be the system I used to track hardcoded unit tracking (i.e. unit x is x m away at x heading).
+
+Idea: I want to be able to always see the coords I capture using VACF. But I also want to store some of these and cycle through them. I might even want to name them or label them. Currently only the latest coord is stored and shown in bottom right of screen. I want to change this to top center area - this will become new info section. Here is the idea - can I add a 'dialog' element here - get the mouse cursor, then if I click the coord section, I can cycle through the captured coords. I can also name them using text. Initially these would be given default names, such as RGBYW / Romeo / Golf / Bravo / Yankee / Whiskey. The VA profile can be set up to respond to these initial lablels "VACF Show Whiskey" for example. But if the user decided to change to labels to say "Primary Target" "Secondary Target etc", these labels could be created in VA. If Romeo was 1, Golf was 2, then if you wanted to change Romeo to Primary Target, you'd just replace "Romeo" with "primary target".
+
+Idea 2: I could avoid using a dialog altogether, and have a VACF state that enables keybinds to show 1, 2, 3, 4, 5 or all saved data. To avoid having a dialog, but enabing customisation of coords, you could have Alpha - Zulu / 1 - 10 / Primary Secondary / RGBA / LZ / PZ / Fallback / 
+essentially you could create your own label for a location.
+Using VACF, you could create a location, and then say:
+"Set Name"
+(show all choices)
+"LZ" "Alpha" "Zulu" "1" 
+Every time you choose something, it gets added to the string below the number. You can delete last, delete all, or save and close.
+Once save and close, your label is now set. This enables two things - you can firstly track your own locations in any mission. But you can also set up a naming convention in VA; for example, if you ... bad idea, this got very complicate dvery quickly!
+
+OK I think we need to hard code these options like this:
+"Set"
+- Primary Target (1)
+- Secondary Target (2)
+- Primary Staging  (3)
+- Secondary Staging (4)
+- LZ Alpha / Bravo / Charlie / Delta / Echo (5 6 7 8 9) 
+- Dynamic Target (default - 0) if you do not label anything, this just gets overwritted each time you call in a new coord)
+The good thing about this, is that you could link this system to some other ordering system like VAHC?
+
+"Show Stored Locations"
+This will show only those labels that have been "set". If nothing has been set, then only the last dynamic label would be shown.
+If no coords had been captured, then this would need to say something like "nothing captured yet mate"
+
+
+Future-Self Notes: 
+- IDD seems to be th same throughout, only the IDCs need to be unique
+
+IDC Convention 
+Here I will document numbering conventions for IDCs 
 
 */
 
 class RscTitles {
 
+    // ---------------------------------------------------------------------------------------------------------
+    // ------------- Default Class - Start
+    // ---------------------------------------------------------------------------------------------------------
     class Default {
         idd                          = -1;
         fadein                       = 0;
         fadeout                      = 1;
         duration                     = 0;
     };
-
-    class DEBUG_1 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_1";
-		onLoad                      = "with uiNameSpace do { DEBUG_1 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99991;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.000 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-    class DEBUG_2 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_2";
-		onLoad                      = "with uiNameSpace do { DEBUG_2 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99992;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.025 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-    class DEBUG_3 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_3";
-		onLoad                      = "with uiNameSpace do { DEBUG_3 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99993;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.050 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-    class DEBUG_4 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_4";
-		onLoad                      = "with uiNameSpace do { DEBUG_4 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99994;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.075 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-    class DEBUG_5 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_5";
-		onLoad                      = "with uiNameSpace do { DEBUG_5 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99995;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.100 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-    class DEBUG_6 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0;
-        fadeout                     = 2;
-        name                        = "DEBUG_6";
-		onLoad                      = "with uiNameSpace do { DEBUG_6 = _this select 0 }";
-	
-        class controls {
-
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 99996;
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.300 * safezoneW + safezoneX;
-				y                   = 0.125 * safezoneH + safezoneY;
-				w                   = 0.400 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
-				}; 
-            };
-		};
-	};
-// ---------------------------------------------------------------------------------------------------------
-
+    // ---------------------------------------------------------------------------------------------------------
+    // ------------- Default Class - Start
+    // ---------------------------------------------------------------------------------------------------------
+    //
+    // ------------- <><><><><>
+    //
+    // ---------------------------------------------------------------------------------------------------------
+    // ------------- VACF Classes - Start
+    // ---------------------------------------------------------------------------------------------------------
+    // VACF is managed by three classes, purely for display of data while the system is in use, and shows data 
+    // persistently afterwards
+    // VACF - Bottom right of screen, shows result of VACF until replaced by new VACF call 
+    // VACF_n1 - Given that n1 and h1 are both at the same place on-screen, I assume one replces the other ..?
+    // VACF_h1 - heading (label) vs number?
+    // ---------------------------------------------------------------------------------------------------------
     class VACF {
         idd                         = 1000000;
         movingEnable                = 0;
@@ -279,7 +82,6 @@ class RscTitles {
         fadeout                     = 2;
         name                        = "VACF";
 		onLoad                      = "with uiNameSpace do { VACF = _this select 0 }";
-
         class controls {
 		    class structuredText {
                 access              = 0;
@@ -295,17 +97,16 @@ class RscTitles {
                 colorBackground[]   = {0,0,0,0};
                 colorText[]         = {1,1,1,1};
                 text                = "";
-                font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "4";
+                font                = "PuristaSemiBold";	
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "4";
 				}; 
             };
 		};
@@ -321,9 +122,7 @@ class RscTitles {
         fadeout                     = 2;
         name                        = "VACF_n1";
 		onLoad                      = "with uiNameSpace do { VACF_n1 = _this select 0 }";
-	
         class controls {
-
 		    class structuredText {
                 access              = 0;
                 type                = 13;
@@ -339,16 +138,15 @@ class RscTitles {
                 colorText[]         = {1,1,1,1};
                 text                = "";
                 font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
 				}; 
             };
 		};
@@ -364,9 +162,7 @@ class RscTitles {
         fadeout                     = 2;
         name                        = "VACF_h1";
 		onLoad                      = "with uiNameSpace do { VACF_h1 = _this select 0 }";
-	
         class controls {
-
 		    class structuredText {
                 access              = 0;
                 type                = 13;
@@ -382,24 +178,45 @@ class RscTitles {
                 colorText[]         = {1,1,1,1};
                 text                = "";
                 font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
 				}; 
             };
 		};
 	};
-
-
-// arty goes here
-    class VAA_h1 {
+    // ---------------------------------------------------------------------------------------------------------
+    // ------------- VACF Classes - End
+    // ---------------------------------------------------------------------------------------------------------
+    //
+    // ------------- <><><><><>
+    //
+    // ---------------------------------------------------------------------------------------------------------
+    // ------------- VAAS Classes - Start
+    // ---------------------------------------------------------------------------------------------------------
+    /*
+    Notes - I need to be able to show:
+    - that the system is live and awaiting data - top center of screen "Artillery Available" / Artillery Offline"
+    - user selection HE / SU / SM / FL - 
+    - lat/lon 
+    - rounds 
+    - radius 
+    - confirm 
+    - close / repeat / adjust fire 
+    - it needs to work well with VACF - this is all part of the same system 
+    */
+    // VAAS is ?
+    // VACF - ?
+    // VACF_n1 - ?
+    // VACF_h1 - ?
+    // ---------------------------------------------------------------------------------------------------------
+    class VAAS_h1 {
         idd                         = 1000000;
         movingEnable                = 0;
         enableSimulation            = 1;
@@ -407,15 +224,13 @@ class RscTitles {
         duration                    = 99999;
         fadein                      = 0.1;
         fadeout                     = 2;
-        name                        = "VACF_h1";
+        name                        = "VAAS_h1";
 		onLoad                      = "with uiNameSpace do { VACF_h1 = _this select 0 }";
-	
         class controls {
-
 		    class structuredText {
                 access              = 0;
                 type                = 13;
-                idc                 = 9901666;
+                idc                 = 9901666; // added 666 for now ... I need a better documented convention for IDCs
                 style               = 0x00;
                 lineSpacing         = 1;
 				x                   = 0.400 * safezoneW + safezoneX;
@@ -427,25 +242,32 @@ class RscTitles {
                 colorText[]         = {1,1,1,1};
                 text                = "";
                 font                = "PuristaSemiBold";
-					
-                    class Attributes {
-						font        = "PuristaSemiBold";
-						color       = "#FFFFFF";
-						align       = "CENTER";
-						valign      = "CENTER";
-						shadow      = false;
-						shadowColor = "#000000";
-						underline   = false;
-						size        = "2";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
 				}; 
             };
 		};
 	};
-// arty ends here 
+// ---------------------------------------------------------------------------------------------------------
+// ------------- VAAS Classes - End
+// ---------------------------------------------------------------------------------------------------------
 
 
 
-// from here - check can delete 
+
+
+
+
+
+
+
 
 // copy from VAUS hpp
     class VAUS_MAINTITLE {
@@ -2692,3 +2514,268 @@ class D_L1_1 {
 
 
 };
+
+/*
+
+Notes: Debug classes pasted below on 17 Feb 2020
+
+// ---------------------------------------------------------------------------------------------------------
+// ------------- Debug Classes - Start
+// ---------------------------------------------------------------------------------------------------------
+
+    class DEBUG_1 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_1";
+		onLoad                      = "with uiNameSpace do { DEBUG_1 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99991;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.000 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+    class DEBUG_2 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_2";
+		onLoad                      = "with uiNameSpace do { DEBUG_2 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99992;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.025 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+    class DEBUG_3 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_3";
+		onLoad                      = "with uiNameSpace do { DEBUG_3 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99993;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.050 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+    class DEBUG_4 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_4";
+		onLoad                      = "with uiNameSpace do { DEBUG_4 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99994;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.075 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+    class DEBUG_5 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_5";
+		onLoad                      = "with uiNameSpace do { DEBUG_5 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99995;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.100 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+    class DEBUG_6 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0;
+        fadeout                     = 2;
+        name                        = "DEBUG_6";
+		onLoad                      = "with uiNameSpace do { DEBUG_6 = _this select 0 }";
+	
+        class controls {
+
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 99996;
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.300 * safezoneW + safezoneX;
+				y                   = 0.125 * safezoneH + safezoneY;
+				w                   = 0.400 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+					
+                    class Attributes {
+						font        = "PuristaSemiBold";
+						color       = "#FFFFFF";
+						align       = "CENTER";
+						valign      = "CENTER";
+						shadow      = false;
+						shadowColor = "#000000";
+						underline   = false;
+						size        = "2";
+				}; 
+            };
+		};
+	};
+
+// ---------------------------------------------------------------------------------------------------------
+// ------------- Debug Classes - Start
+// ---------------------------------------------------------------------------------------------------------
