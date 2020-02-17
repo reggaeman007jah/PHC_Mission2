@@ -10,7 +10,7 @@ while {VACF_numericalInputbool} do {
 
 	// counts / validates the correct numbers are held in each array
 	confirmedHeading = count VACF_Heading; // should be 3 // actually this will now be 5 - i.e. adding two decimal places to the input to enhahnce accuracy
-	confirmedDistance = count VACF_Distance; // should be 4 // 
+	confirmedDistance = count VACF_Distance; // should be 4 // upto 9999m 
 	
 	// Heading
 	if (VACF_headingBool) then {

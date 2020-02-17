@@ -7,7 +7,7 @@ purpose:
 listens to numpad keypresses, and sends respective values (numpad nums) into arrays 
 the array the data is pushed into is dependent on the current state (bool) - this is managed by the monitor 
 
-notes:
+notes://
 something to test - does this need to be bool-driven? Or would these operate just as well by activating and then removing the EH?
 */
 
@@ -23,9 +23,13 @@ if (numericalInputBool) then {
 
 	}"];
 
+	execVM 'voiceActivatedArty\RSCnums\titleDisplay.sqf';
+
 	rgg_kd0 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 82) then {
 
 		systemChat '0';
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
 
 		if (latCoordInputBool) then {
 			splashCoordsLat pushback 0;
@@ -53,6 +57,8 @@ if (numericalInputBool) then {
 	rgg_kd1 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 79) then {
 
 		systemChat '1';
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
 
 		if (artyTypeBool) then {
 			splashArtyTypeHE pushback 1;
@@ -91,6 +97,8 @@ if (numericalInputBool) then {
 
 		systemChat '2';
 
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (artyTypeBool) then {
 			splashArtyTypeSU pushback 1;
 			systemChat 'Surgical Selected';
@@ -122,7 +130,9 @@ if (numericalInputBool) then {
 	rgg_kd3 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 81) then {
 			
 		systemChat '3';
-		
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (ArtyTypeBool) then {
 			splashArtyTypeSM pushback 1;
 			systemChat 'smoke selected';
@@ -154,7 +164,9 @@ if (numericalInputBool) then {
 	rgg_kd4 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 75) then {
 		
 		systemChat '4';
-		
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (artyTypeBool) then {
 			splashArtyTypeFL pushback 4;
 			systemChat 'flares selected';
@@ -187,6 +199,8 @@ if (numericalInputBool) then {
 			
 		systemChat '5';
 
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (ordColourBool) then {
 			splashOrdColour pushback 5;
 			systemChat 'oranges selected';
@@ -213,6 +227,8 @@ if (numericalInputBool) then {
 	rgg_kd6 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 77) then {
 			
 		systemChat '6';
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
 
 		if (ordColourBool) then {
 			splashOrdColour pushback 6;
@@ -241,6 +257,8 @@ if (numericalInputBool) then {
 			
 		systemChat '7';
 
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (ordColourBool) then {
 			splashCrdColour pushback 7;
 			systemChat 'yellow selected';
@@ -268,6 +286,8 @@ if (numericalInputBool) then {
 			
 		systemChat '8';
 
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
+
 		if (ordColourBool) then {
 			splashOrdColour pushback 8;
 			systemChat 'IR Selected';
@@ -294,6 +314,8 @@ if (numericalInputBool) then {
 	rgg_kd9 = (findDisplay 46) displayAddEventHandler ["KeyDown", "if (_this select 1 == 73) then {
 			
 		systemChat '9';
+
+		execVM 'voiceActivatedArty\RSCnums\dataEntry.sqf';
 
 		if (latCoordInputBool) then {
 			splashCoordsLat pushback 9;

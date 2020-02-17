@@ -25,3 +25,7 @@ _ehRemove11 = (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_cnl];
 
 numericalInputBool 	= false;
 vamp 				= false;
+
+1 cutRsc ["default","PLAIN"];
+
+
