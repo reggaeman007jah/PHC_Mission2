@@ -29,7 +29,7 @@ OK I think we need to hard code these options like this:
 - Secondary Target (2)
 - Primary Staging  (3)
 - Secondary Staging (4)
-- LZ Alpha / Bravo / Charlie / Delta / Echo (5 6 7 8 9) 
+- Alpha / Bravo / Charlie / Delta / Echo (5 6 7 8 9) 
 - Dynamic Target (default - 0) if you do not label anything, this just gets overwritted each time you call in a new coord)
 The good thing about this, is that you could link this system to some other ordering system like VAHC?
 
@@ -37,6 +37,7 @@ The good thing about this, is that you could link this system to some other orde
 This will show only those labels that have been "set". If nothing has been set, then only the last dynamic label would be shown.
 If no coords had been captured, then this would need to say something like "nothing captured yet mate"
 
+Use stored locations - when using VAAS, you should be able to refer to stored locations.
 
 Future-Self Notes: 
 - IDD seems to be th same throughout, only the IDCs need to be unique
@@ -79,6 +80,10 @@ class RscTitles {
     // VACF - Bottom right of screen, shows result of VACF until replaced by new VACF call 
     // VACF_n1 - Given that n1 and h1 are both at the same place on-screen, I assume one replces the other ..?
     // VACF_h1 - heading (label) vs number?
+    // I want to change the basic label at the bottom right, and instead have a system that can be shown/hidden
+    // It should also enable upto 10 locations (stored in game memory)
+    // It should also enable a label association, maybe more than one label per line 
+    // Question - should this work within the map as well as in-game? A map view might be nice.
     // ---------------------------------------------------------------------------------------------------------
     class VACF {
         idd                         = 1000000;
