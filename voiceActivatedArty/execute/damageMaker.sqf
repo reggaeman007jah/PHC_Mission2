@@ -41,7 +41,7 @@ _marker2 = createMarker ["blast2", _impact];
 _marker2 setMarkerShapeLocal "ELLIPSE";
 _marker2 setMarkerColorLocal "ColorRed";
 _marker2 setMarkerSizeLocal [60, 60];
-_marker2 setMarkerAlphaLocal 0.1;
+_marker2 setMarkerAlphaLocal 0.5;
 
 _units = allUnits inAreaArray "blast2";
 {

@@ -256,7 +256,7 @@ while {numericalInputbool} do {
 			if (_goodToGo == 0) then {
 
 				execVM 'voiceActivatedArty\clearKeyDowns.sqf';
-				systemChat "MISSION ABORT"
+				systemChat "MISSION ABORT... from last stage of KDM script";
 				execVM "voiceActivatedArty\initialiseVAA.sqf";
 			};
 		};

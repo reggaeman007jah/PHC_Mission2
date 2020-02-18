@@ -26,7 +26,7 @@ notes:
 	_parsed1Rad = splashRadius joinString "";
 //};
 
-// 04017,00678 9555(-9487)
+// this really needs to be a display!
 
 _parsedLat = parseNumber _parsed1Lat;
 _parsedLon = parseNumber _parsed1Lon;

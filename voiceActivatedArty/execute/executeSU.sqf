@@ -33,14 +33,7 @@ _marker1 setMarkerAlphaLocal 0.9;
 RGG_callArty1 = {
 	
 	numericalInput = false;
-	// sleep 15;
-	// systemChat "HE x 25 inbound, splash in 60 ...";
-	// sleep 30;
-	// // inform user through display or .ogg, but for now just use sysChat 
-	// systemChat "HE x 25, splash in 30 ...";
-	// sleep 15;
-	// systemChat "splash in 15 ...";
-	// sleep 10;
+	sleep 25;
 	systemChat ".. 5 ..";
 	sleep 1;
 	systemChat ".. 4 ..";
