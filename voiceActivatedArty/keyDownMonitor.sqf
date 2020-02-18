@@ -48,7 +48,7 @@ while {numericalInputbool} do {
 		};
 
 		if (confirmedTypeSU == 1) then {
-			systemChat "GBU Surgical Strike confirmed";
+			systemChat "GBU Hellfire confirmed";
 			systemChat "Confirm latitude";
 			artyTypeBool = false;
 			latCoordInputBool = true;
