@@ -29,6 +29,8 @@ confirmedTypeSU	= count splashArtyTypeSU;
 confirmedTypeSM	= count splashArtyTypeSM;
 confirmedTypeFL	= count splashArtyTypeFL;
 
+_t1 = "test";
+
 if (confirmedTypeHE == 1) then {
 	_t1 = "High Explosive Barrage confirmed";
 };

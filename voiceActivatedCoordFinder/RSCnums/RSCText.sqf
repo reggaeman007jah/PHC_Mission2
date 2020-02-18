@@ -15,7 +15,7 @@ disableSerialization;
 _lat = _this select 0;
 _lon = _this select 1;
 
-1 cutRsc ["VACF","PLAIN"];
+10 cutRsc ["VACF","PLAIN"];
 
 waitUntil {!isNull (uiNameSpace getVariable "VACF")};
 

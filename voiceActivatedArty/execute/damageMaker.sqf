@@ -34,7 +34,7 @@ _marker1 setMarkerAlphaLocal 0.1;
 _units = allUnits inAreaArray "blast1";
 {
 	_x setDamage 1;
-	sleep 0.1;
+	// sleep 0.1;
 } forEach _units;	
 
 _marker2 = createMarker ["blast2", _impact];
@@ -46,7 +46,7 @@ _marker2 setMarkerAlphaLocal 0.5;
 _units = allUnits inAreaArray "blast2";
 {
 	_x setDamage 0.7;
-	sleep 0.1;
+	// sleep 0.1;
 } forEach _units;
 
 deleteMarker "blast1";

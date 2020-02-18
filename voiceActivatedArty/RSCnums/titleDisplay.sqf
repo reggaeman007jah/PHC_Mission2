@@ -1,6 +1,6 @@
 1 cutRsc ["VAAS_h1","PLAIN"];
 waitUntil {!isNull (uiNameSpace getVariable "VAAS_h1")};
-_n1 = "AWAITING DATA";
+_n1 = "CONFIRM TYPE";
 
 _display = uiNameSpace getVariable "VAAS_h1";
 _setText = _display displayCtrl 99002;
