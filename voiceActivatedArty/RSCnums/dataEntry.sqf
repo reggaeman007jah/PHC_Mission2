@@ -52,7 +52,7 @@ _n2 = splashCoordsLon;
 // confirm or cancel 
 _c1 = "CONFIRM";
 _c2 = "CANCEL";
-
+// test
 
 // -----------------------------------------------------------------------
 // ------------ render displays
