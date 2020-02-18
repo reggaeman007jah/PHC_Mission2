@@ -27,5 +27,9 @@ numericalInputBool 	= false;
 vamp 				= false;
 
 1 cutRsc ["default","PLAIN"];
+2 cutRsc ["default","PLAIN"];
+3 cutRsc ["default","PLAIN"];
+4 cutRsc ["default","PLAIN"];
+5 cutRsc ["default","PLAIN"];
 
 
