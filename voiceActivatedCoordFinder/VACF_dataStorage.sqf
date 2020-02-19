@@ -117,57 +117,65 @@ disableSerialization;
 29 cutRsc ["VADS_line10","PLAIN"];
 waitUntil {!isNull (uiNameSpace getVariable "VADS_line1")};
 
+_display = uiNameSpace getVariable "VADS_header";
+_setText = _display displayCtrl 9900000;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
 _display = uiNameSpace getVariable "VADS_line1";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900001;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line2";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900002;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry2, _entry2Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line3";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900003;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry3, _entry3Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line4";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900004;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry4, _entry4Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line5";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900005;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry5, _entry5Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line6";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900006;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry6, _entry6Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line7";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900007;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry7, _entry7Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line8";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900008;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry8, _entry8Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line9";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900009;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry9, _entry9Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line10";
-_setText = _display displayCtrl ?????;
+_setText = _display displayCtrl 9900010;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry10, _entry10Label]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-
+_display = uiNameSpace getVariable "VADS_footer";
+_setText = _display displayCtrl 9900011;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 /*
 _arr = [1,2,3];

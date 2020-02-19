@@ -832,17 +832,17 @@ These can be objectives, waypoints, LZs, full label list TBC
         duration                    = 99999;
         fadein                      = 0.1;
         fadeout                     = 2;
-        name                        = "VAAS_c1";
-		onLoad                      = "with uiNameSpace do { VAAS_c1 = _this select 0 }";
+        name                        = "VADS_line10";
+		onLoad                      = "with uiNameSpace do { VADS_line10 = _this select 0 }";
         class controls {
 		    class structuredText {
                 access              = 0;
                 type                = 13;
-                idc                 = 99004; 
+                idc                 = 9900010; 
                 style               = 0x00;
                 lineSpacing         = 1;
 				x                   = 0.400 * safezoneW + safezoneX;
-				y                   = 0.275 * safezoneH + safezoneY;
+				y                   = 0.625 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
                 size                = 0.020;
@@ -878,11 +878,11 @@ These can be objectives, waypoints, LZs, full label list TBC
 		    class structuredText {
                 access              = 0;
                 type                = 13;
-                idc                 = 990010; 
+                idc                 = 990011; 
                 style               = 0x00;
                 lineSpacing         = 1;
 				x                   = 0.400 * safezoneW + safezoneX;
-				y                   = 0.625 * safezoneH + safezoneY;
+				y                   = 0.650 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
                 size                = 0.020;
