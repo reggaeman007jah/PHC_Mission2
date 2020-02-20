@@ -718,7 +718,7 @@ These can be objectives, waypoints, LZs, full label list TBC
 		    class structuredText {
                 access              = 0;
                 type                = 13;
-                idc                 = 99007; 
+                idc                 = 990007; 
                 style               = 0x00;
                 lineSpacing         = 1;
 				x                   = 0.400 * safezoneW + safezoneX;
@@ -909,6 +909,377 @@ These can be objectives, waypoints, LZs, full label list TBC
 // ---------------------------------------------------------------------------------------------------------
 
 // ------------- <><><><><>
+
+// ---------------------------------------------------------------------------------------------------------
+// ------------- VADS Labels - Start
+// ---------------------------------------------------------------------------------------------------------
+
+    class VADS_RSClabelheader {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabelheader";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabelheader = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990020; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.375 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel1 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel1";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel1 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990021; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.400 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel2 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel2";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel2 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990022; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.425 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel3 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel3";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel3 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990023; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.450 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel4 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel4";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel4 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990024; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.475 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel5 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel5";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel5 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990025; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.500 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel6 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel6";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel6 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990026; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.525 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel7 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel7";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel7 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990027; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.550 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+    class VADS_RSClabel8 {
+        idd                         = 1000000;
+        movingEnable                = 0;
+        enableSimulation            = 1;
+        enableDisplay               = 1;
+        duration                    = 99999;
+        fadein                      = 0.1;
+        fadeout                     = 2;
+        name                        = "VADS_RSClabel8";
+		onLoad                      = "with uiNameSpace do { VADS_RSClabel8 = _this select 0 }";
+        class controls {
+		    class structuredText {
+                access              = 0;
+                type                = 13;
+                idc                 = 990028; 
+                style               = 0x00;
+                lineSpacing         = 1;
+				x                   = 0.650 * safezoneW + safezoneX;
+				y                   = 0.575 * safezoneH + safezoneY;
+				w                   = 0.200 * safezoneW;
+				h                   = 0.025 * safezoneH;
+                size                = 0.020;
+                colorBackground[]   = {0,0,0,0};
+                colorText[]         = {1,1,1,1};
+                text                = "";
+                font                = "PuristaSemiBold";
+                class Attributes {
+                    font            = "PuristaSemiBold";
+                    color           = "#FFFFFF";
+                    align           = "CENTER";
+                    valign          = "CENTER";
+                    shadow          = false;
+                    shadowColor     = "#000000";
+                    underline       = false;
+                    size            = "2";
+				}; 
+            };
+		};
+	};
+
+// ---------------------------------------------------------------------------------------------------------
+// ------------- VADS Labels - End
+// ---------------------------------------------------------------------------------------------------------
+
+// ------------- <><><><><>
+
 
 
 /*
