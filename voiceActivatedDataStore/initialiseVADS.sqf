@@ -14,28 +14,25 @@ also starts off the monitor to loop-listen for changes and move states at key po
 vamp is a universal bool that is used to ensure that only one module can be run at any one time  
 here we use VAMP when editing labels, however we must also be able to call this alongside other modules 
 so - additional kdowns are needed in VAAS and VACF to hide/show this content
+
+notes:
+I think that when the first EH fires, we will need to show all stored data on screen.
+Then when data is on-screen, our keyDown system can work with whatever is on screen.
+So we really need to render everything first.
+
 */ 
 
-
-// vars and arrays initialisation
-// VACF_Heading			= [];
-// VACF_Distance		= [];
-// VACF_ConfirmedCoords	= [];		
+// vars and arrays initialisation	
 VADS_selectedItem		= [];		
 VADS_selectedLabel		= [];		
 VADS_closeApp			= [];
 VADS_numericalInputbool	= false; 	
-// VADS_setLabel		= false; 
 VADS_selectItemBool		= false;	
 VADS_selectLabelBool	= false; 	
 // confirm? cancel?
 
-// VACF_headingBool		= false;
-// VACF_distanceBool	= false;
-// VACF_showCoords		= false;
-
-// key = "numpad ??"
-rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == ??)) then {
+// key = "numpad 2"
+rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == 80)) then {
 
 	vamp = true;
 	_ehRemove1 = (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_vads_Activate];
@@ -44,5 +41,14 @@ rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!V
 	VADS_numericalInputbool = true; 
 	execVM 'voiceActivatedDataStore\VADS_keyDowns.sqf'; 
 	execVM 'voiceActivatedDataStore\VADS_keyDownMonitor.sqf'; 
+	execVM 'voiceActivatedDataStore\VADS_displayData.sqf'; 
 }"];
 
+/*
+// VACF_Heading			= [];
+// VACF_Distance		= [];
+// VACF_ConfirmedCoords	= [];	
+
+// VACF_headingBool		= false;
+// VACF_distanceBool	= false;
+// VACF_showCoords		= false;

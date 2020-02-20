@@ -71,6 +71,23 @@ VAA_FLR_Reup_Active = false;
 // for now, do not change the above bool, and allow these from mission start
 
 
+// loading default values for VADS
+VADS_entry1 ="";
+VADS_entry2 ="";
+VADS_entry3 ="";
+VADS_entry4 ="";
+VADS_entry5 ="";
+VADS_entry6 ="";
+VADS_entry7 ="";
+VADS_entry8 ="";
 
+VADS_label1 ="";
+VADS_label2 ="";
+VADS_label3 ="";
+VADS_label4 ="";
+VADS_label5 ="";
+VADS_label6 ="";
+VADS_label7 ="";
+VADS_label8 ="";
 
 

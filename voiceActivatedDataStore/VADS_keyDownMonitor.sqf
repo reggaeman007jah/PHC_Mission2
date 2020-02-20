@@ -88,10 +88,10 @@ while {VADS_numericalInputbool} do {
 			systemChat "closing app";
 		};
 	};
+	sleep 0.2; 
+};	
 
-
-
-
+/*
 
 	// counts / validates the correct numbers are held in each array
 	confirmedHeading = count VACF_Heading; // should be 3 // actually this will now be 5 - i.e. adding two decimal places to the input to enhahnce accuracy
@@ -125,7 +125,3 @@ while {VADS_numericalInputbool} do {
 		// systemChat "called prepareCoords";
 		VACF_showCoords = false;
 	};
-
-	sleep 0.2; 
-};	
-	
