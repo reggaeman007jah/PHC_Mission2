@@ -56,3 +56,4 @@ vamp = false;
 37 cutRsc ["default","PLAIN"];
 38 cutRsc ["default","PLAIN"];
 
+		execVM 'voiceActivatedDataStore\VADS_Init.sqf';
