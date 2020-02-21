@@ -23,28 +23,30 @@ So we really need to render everything first.
 */ 
 
 // vars and arrays initialisation	
-VADS_selectedItem		= [];		
-VADS_selectedLabel		= [];		
-VADS_closeApp			= [];
+// VADS_selectedItem		= [];		
+// VADS_selectedLabel		= [];		
+// VADS_closeApp			= [];
 VADS_numericalInputbool	= false; 	
-VADS_selectItemBool		= false;	
-VADS_selectLabelBool	= false; 	
+// VADS_selectItemBool		= false;	
+// VADS_selectLabelBool	= false; 	
 // confirm? cancel?
 
 // key = "numpad 2"
 rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == 80)) then {
 
-	vamp = true;
 	_ehRemove1 = (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_vads_Activate];
 	systemChat 'VADS Activated - Please select item to edit';
-	VADS_setLabel = true;
+	
 	VADS_numericalInputbool = true; 
 	execVM 'voiceActivatedDataStore\VADS_keyDowns.sqf'; 
-	execVM 'voiceActivatedDataStore\VADS_keyDownMonitor.sqf'; 
 	execVM 'voiceActivatedDataStore\VADS_displayData.sqf'; 
 }"];
 
 /*
+
+execVM 'voiceActivatedDataStore\VADS_keyDownMonitor.sqf';
+VADS_setLabel = true;
+
 // VACF_Heading			= [];
 // VACF_Distance		= [];
 // VACF_ConfirmedCoords	= [];	

@@ -25,6 +25,9 @@ systemChat str VAMP_dataList;
 // now we need a line for each item in the array (including empty items)
 // we populate them by using array position selectors 
 
+
+/*
+
 _entry1 = VAMP_dataList select 0;
 _entry2 = VAMP_dataList select 1;
 _entry3 = VAMP_dataList select 2;

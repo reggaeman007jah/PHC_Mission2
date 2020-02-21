@@ -1,13 +1,13 @@
-_ehVACF_Remove0 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd0];
-_ehVACF_Remove2 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd1];
-_ehVACF_Remove3 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd2];
-_ehVACF_Remove4 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd3];
-_ehVACF_Remove5 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd4];
-_ehVACF_Remove6 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd5];
-_ehVACF_Remove7 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd6];
-_ehVACF_Remove8 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd7];
-_ehVACF_Remove9 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd8];
-_ehVACF_Remove10 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd9];
+// _ehVACF_Remove0 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd0];
+// _ehVACF_Remove2 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd1];
+// _ehVACF_Remove3 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd2];
+// _ehVACF_Remove4 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd3];
+// _ehVACF_Remove5 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd4];
+// _ehVACF_Remove6 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd5];
+// _ehVACF_Remove7 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd6];
+// _ehVACF_Remove8 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd7];
+// _ehVACF_Remove9 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd8];
+// _ehVACF_Remove10 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vads_kd9];
 _ehRemove11 		= (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_vads_cnl];
 
 VADS_numericalInputbool = false;
@@ -33,7 +33,7 @@ VADS_numericalInputbool = false;
 // 1 cutRsc ["default","PLAIN"];
 // 1 cutRsc ["default","PLAIN"];
 
-vamp = false;
+// vamp = false;
 
 20 cutRsc ["default","PLAIN"];
 21 cutRsc ["default","PLAIN"];
@@ -56,4 +56,4 @@ vamp = false;
 37 cutRsc ["default","PLAIN"];
 38 cutRsc ["default","PLAIN"];
 
-		execVM 'voiceActivatedDataStore\VADS_Init.sqf';
+// execVM 'voiceActivatedDataStore\VADS_Init.sqf';
