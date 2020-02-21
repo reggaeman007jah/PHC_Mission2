@@ -41,8 +41,8 @@ if (_countTestLon == 3) then {
 	_stringTestLon = _fiveNum;
 }; 
 
-[_stringTestLan, _stringTestLon]execVM "voiceActivatedCoordFinder\RSCnums\RSCText.sqf"
-[_stringTestLan, _stringTestLon]execVM "voiceActivatedCoordFinder\VACF_dataStorage.sqf"
+[_stringTestLan, _stringTestLon]execVM "voiceActivatedCoordFinder\RSCnums\RSCText.sqf";
+[_stringTestLan, _stringTestLon]execVM "voiceActivatedCoordFinder\VACF_dataStorage.sqf";
 
 
 

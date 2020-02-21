@@ -31,6 +31,12 @@ RGG_callVACF = {
 };
 [_VACF_heading, _VACF_distance] call RGG_callVACF;
 
+
+// _countData = count VAMP_dataList; // determines how many items we have in the data list 
+
+// systemChat "items in VAMP_dataList after data entry and just before re-init:";
+// systemChat str _countData;
+
 execVM "voiceActivatedCoordFinder\initialiseVACF.sqf";
 
 

@@ -1,3 +1,139 @@
+
+
+_countData = count VAMP_dataList; // determines how many items we have in the data list 
+
+systemChat "max-out check // items in VAMP_dataList after data entry:";
+systemChat str _countData;
+
+// if we have ten items, we delete the oldest one 
+// as we are using pushback, with the newest item at the back of the array, we delete position 0 as the oldest item 
+if (_countData == 8) then {
+	systemChat "deleting oldest data:";
+	_deleteData = VAMP_dataList deleteAt 0;
+	systemChat "after deleting:";
+	systemChat str _deleteData;
+};
+
+// now we use the data parsed to us from presentation.sqf 
+_lat = _this select 0;
+_lon = _this select 1;
+_newItem = _lat + _lon; // this links them together as one string 
+VAMP_dataList pushBack _newItem; // this pushes the new single item to the rear of the array
+systemChat "pushback data done";
+systemChat str VAMP_dataList;
+
+// now we need a line for each item in the array (including empty items)
+// we populate them by using array position selectors 
+
+_entry1 = VAMP_dataList select 0;
+_entry2 = VAMP_dataList select 1;
+_entry3 = VAMP_dataList select 2;
+_entry4 = VAMP_dataList select 3;
+_entry5 = VAMP_dataList select 4;
+_entry6 = VAMP_dataList select 5;
+_entry7 = VAMP_dataList select 6;
+_entry8 = VAMP_dataList select 7;
+// _entry9 = VAMP_dataList select 8;
+// _entry10 = VAMP_dataList select 9;
+
+_entry1Label = "test";
+_entry2Label = "test";
+_entry3Label = "test";
+_entry4Label = "test";
+_entry5Label = "test";
+_entry6Label = "test";
+_entry7Label = "test";
+_entry8Label = "test";
+_entry9Label = "test";
+_entry10Label = "test";
+
+
+disableSerialization;
+
+20 cutRsc ["VADS_line1","PLAIN"];
+21 cutRsc ["VADS_line2","PLAIN"];
+22 cutRsc ["VADS_line3","PLAIN"];
+23 cutRsc ["VADS_line4","PLAIN"];
+24 cutRsc ["VADS_line5","PLAIN"];
+25 cutRsc ["VADS_line6","PLAIN"];
+26 cutRsc ["VADS_line7","PLAIN"];
+27 cutRsc ["VADS_line8","PLAIN"];
+28 cutRsc ["VADS_line9","PLAIN"];
+29 cutRsc ["VADS_line10","PLAIN"];
+waitUntil {!isNull (uiNameSpace getVariable "VADS_line1")};
+
+// _display = uiNameSpace getVariable "VADS_header";
+// _setText = _display displayCtrl 990000;
+// _setText ctrlSetStructuredText (parseText format ["HEADER"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line1";
+_setText = _display displayCtrl 990001;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line2";
+_setText = _display displayCtrl 990002;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry2, _entry2Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line3";
+_setText = _display displayCtrl 990003;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry3, _entry3Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line4";
+_setText = _display displayCtrl 990004;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry4, _entry4Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line5";
+_setText = _display displayCtrl 990005;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry5, _entry5Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line6";
+_setText = _display displayCtrl 990006;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry6, _entry6Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line7";
+_setText = _display displayCtrl 990007;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry7, _entry7Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+_display = uiNameSpace getVariable "VADS_line8";
+_setText = _display displayCtrl 990008;
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry8, _entry8Label]);
+_setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+// _display = uiNameSpace getVariable "VADS_line9";
+// _setText = _display displayCtrl 9900009;
+// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry9, _entry9Label]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+// _display = uiNameSpace getVariable "VADS_line10";
+// _setText = _display displayCtrl 9900010;
+// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry10, _entry10Label]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+// _display = uiNameSpace getVariable "VADS_footer";
+// _setText = _display displayCtrl 990011;
+// _setText ctrlSetStructuredText (parseText format ["FOOTER"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
+
+/*
+_arr = [1,2,3];
+_arr pushBack 4;
+hint str _arr; //[1,2,3,4]
+
+_arr = [1,2,3];
+_rem = _arr deleteAt 1;
+hint str [_rem, _arr]; //[2,[1,3]]
+*/
+
+
+
 /*
 Draft of the system used to store data from VACF 
 
@@ -58,136 +194,4 @@ RSC screen render of stored data
 notes:
 
 */
-
-_countData = count VAMP_dataList; // determines how many items we have in the data list 
-
-// if we have ten items, we delete the oldest one 
-// as we are using pushback, with the newest item at the back of the array, we delete position 0 as the oldest item 
-if (_countData == 10) then {
-	systemChat "deleting oldest data:";
-	_countData = _countData deleteAt 0;
-	systemChat str _countData;
-};
-
-// now we use the data parsed to us from presentation.sqf 
-_lat = _this select 0;
-_lon = _this select 1;
-_newItem = _lat + _lon; // this links them together as one string 
-VAMP_dataList pushBack _newItem; // this pushes the new single item to the rear of the array
-systemChat "pushback data done";
-systemChat str VAMP_dataList;
-
-// now we need a line for each item in the array (including empty items)
-// we populate them by using array position selectors 
-
-_entry1 = VAMP_dataList select 0;
-_entry2 = VAMP_dataList select 1;
-_entry3 = VAMP_dataList select 2;
-_entry4 = VAMP_dataList select 3;
-_entry5 = VAMP_dataList select 4;
-_entry6 = VAMP_dataList select 5;
-_entry7 = VAMP_dataList select 6;
-_entry8 = VAMP_dataList select 7;
-_entry9 = VAMP_dataList select 8;
-_entry10 = VAMP_dataList select 9;
-
-_entry1Label = "test";
-_entry2Label = "test";
-_entry3Label = "test";
-_entry4Label = "test";
-_entry5Label = "test";
-_entry6Label = "test";
-_entry7Label = "test";
-_entry8Label = "test";
-_entry9Label = "test";
-_entry10Label = "test";
-
-
-disableSerialization;
-
-20 cutRsc ["VADS_line1","PLAIN"];
-21 cutRsc ["VADS_line2","PLAIN"];
-22 cutRsc ["VADS_line3","PLAIN"];
-23 cutRsc ["VADS_line4","PLAIN"];
-24 cutRsc ["VADS_line5","PLAIN"];
-25 cutRsc ["VADS_line6","PLAIN"];
-26 cutRsc ["VADS_line7","PLAIN"];
-27 cutRsc ["VADS_line8","PLAIN"];
-28 cutRsc ["VADS_line9","PLAIN"];
-29 cutRsc ["VADS_line10","PLAIN"];
-waitUntil {!isNull (uiNameSpace getVariable "VADS_line1")};
-
-_display = uiNameSpace getVariable "VADS_header";
-_setText = _display displayCtrl 990000;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line1";
-_setText = _display displayCtrl 990001;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line2";
-_setText = _display displayCtrl 990002;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry2, _entry2Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line3";
-_setText = _display displayCtrl 990003;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry3, _entry3Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line4";
-_setText = _display displayCtrl 990004;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry4, _entry4Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line5";
-_setText = _display displayCtrl 990005;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry5, _entry5Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line6";
-_setText = _display displayCtrl 990006;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry6, _entry6Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line7";
-_setText = _display displayCtrl 990007;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry7, _entry7Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_line8";
-_setText = _display displayCtrl 990008;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry8, _entry8Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-// _display = uiNameSpace getVariable "VADS_line9";
-// _setText = _display displayCtrl 9900009;
-// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry9, _entry9Label]);
-// _setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-// _display = uiNameSpace getVariable "VADS_line10";
-// _setText = _display displayCtrl 9900010;
-// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry10, _entry10Label]);
-// _setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-_display = uiNameSpace getVariable "VADS_footer";
-_setText = _display displayCtrl 990011;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry1, _entry1Label]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-/*
-_arr = [1,2,3];
-_arr pushBack 4;
-hint str _arr; //[1,2,3,4]
-
-_arr = [1,2,3];
-_rem = _arr deleteAt 1;
-hint str [_rem, _arr]; //[2,[1,3]]
-*/
-
-
-
-
 

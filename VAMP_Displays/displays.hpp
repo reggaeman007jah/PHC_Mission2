@@ -521,7 +521,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990002; 
                 style               = 0x00;
                 lineSpacing         = 1;
-                x                   = 0.400 * safezoneW + safezoneX;
+                x                   = 0.150 * safezoneW + safezoneX;
                 y                   = 0.425 * safezoneH + safezoneY;
                 w                   = 0.200 * safezoneW;
                 h                   = 0.025 * safezoneH;
@@ -561,7 +561,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990003; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.450 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -601,7 +601,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990004; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.475 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -641,7 +641,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990005; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.500 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -681,7 +681,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990006; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.525 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -721,7 +721,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990007; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.550 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -761,7 +761,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990008; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.575 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -801,7 +801,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990009; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.600 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -841,7 +841,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 9900010; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.625 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -881,7 +881,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990011; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.400 * safezoneW + safezoneX;
+				x                   = 0.150 * safezoneW + safezoneX;
 				y                   = 0.650 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;

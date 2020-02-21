@@ -11,6 +11,10 @@ also starts off the monitor to loop-listen for changes and move states at key po
 vamp is a universal bool that is used to ensure that only one module can be run at any one time  
 */ 
 
+// _countData = count VAMP_dataList; // determines how many items we have in the data list 
+// systemChat "items in VAMP_dataList beforee data entry:";
+// systemChat str _countData;
+
 // vars and arrays initialisation
 VACF_Heading			= [];
 VACF_Distance			= [];
@@ -25,11 +29,14 @@ rgg_vacf_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!V
 
 	vamp = true;
 	_ehRemove1 = (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_vacf_Activate];
+	_countData = count VAMP_dataList; 
+	systemChat 'items in VAMP_dataList beforee data entry:';
+	systemChat str _countData;
 	systemChat 'VACF Activated - Please confirm heading';
 	VACF_headingBool = true;
 	VACF_numericalInputbool = true; 
 	execVM 'voiceActivatedCoordFinder\VACF_keyDowns.sqf'; 
 	execVM 'voiceActivatedCoordFinder\VACF_keyDownMonitor.sqf'; 
-
 }"];
+
 
