@@ -15,7 +15,7 @@ notes from VACF...
 
 Draft of the system used to store data from VACF 
 
-Aim to store upto 10 line items of data 
+Aim to store upto 8 line items of data 
 
 An array can hold the data, then count the array items to generate required numbers 
 
@@ -100,20 +100,6 @@ VADS_entry5 = VAMP_dataList select 3;
 VADS_entry6 = VAMP_dataList select 2;
 VADS_entry7 = VAMP_dataList select 1;
 VADS_entry8 = VAMP_dataList select 0;
-// _entry9 = VAMP_dataList select 8;
-// _entry10 = VAMP_dataList select 9;
-
-// dummy label data - I think these need to be globals 
-_entry1Label = "test";
-_entry2Label = "test";
-_entry3Label = "test";
-_entry4Label = "test";
-_entry5Label = "test";
-_entry6Label = "test";
-_entry7Label = "test";
-_entry8Label = "test";
-// _entry9Label = "test";
-// _entry10Label = "test";
 
 // allocate display layers
 disableSerialization;
@@ -147,12 +133,12 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line1";
 _setText = _display displayCtrl 990001;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_entry1, VADS_label1]);
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2", VADS_main1 select 0, VADS_main1 select 1]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line2";
 _setText = _display displayCtrl 990002;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_entry2, VADS_label2]);
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_main2 select 0, VADS_main2 select 1]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line3";

@@ -90,4 +90,12 @@ VADS_label6 ="";
 VADS_label7 ="";
 VADS_label8 ="";
 
+VADS_main1 = ["ttt1","tttrr1"];
+VADS_main2 = ["ttt2","tttrr2"];
+VADS_main3 = ["",""];
+VADS_main4 = ["",""];
+VADS_main5 = ["",""];
+VADS_main6 = ["",""];
+VADS_main7 = ["",""];
+VADS_main8 = ["",""];
 
