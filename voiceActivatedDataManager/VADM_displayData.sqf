@@ -237,7 +237,7 @@ _setText ctrlSetStructuredText (parseText format ["8: DELTA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 // ------------------------------------------------------------------------------
-// here we re-init the scripts to complete subsequent data management
+// here we re-init the data arrays and bool to complete subsequent data management
 
 VADM_selectedItem		= [];	
 VADM_selectedLabel		= [];	

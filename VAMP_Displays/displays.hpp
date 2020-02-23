@@ -784,125 +784,125 @@ These can be objectives, waypoints, LZs, full label list TBC
 		};
 	};
 
-    class VADS_line9 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0.1;
-        fadeout                     = 2;
-        name                        = "VADS_line9";
-		onLoad                      = "with uiNameSpace do { VADS_line9 = _this select 0 }";
-        class controls {
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 990009; 
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.150 * safezoneW + safezoneX;
-				y                   = 0.600 * safezoneH + safezoneY;
-				w                   = 0.200 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-                class Attributes {
-                    font            = "PuristaSemiBold";
-                    color           = "#FFFFFF";
-                    align           = "CENTER";
-                    valign          = "CENTER";
-                    shadow          = false;
-                    shadowColor     = "#000000";
-                    underline       = false;
-                    size            = "2";
-				}; 
-            };
-		};
-	};
+    // class VADS_line9 {
+    //     idd                         = 1000000;
+    //     movingEnable                = 0;
+    //     enableSimulation            = 1;
+    //     enableDisplay               = 1;
+    //     duration                    = 99999;
+    //     fadein                      = 0.1;
+    //     fadeout                     = 2;
+    //     name                        = "VADS_line9";
+	// 	onLoad                      = "with uiNameSpace do { VADS_line9 = _this select 0 }";
+    //     class controls {
+	// 	    class structuredText {
+    //             access              = 0;
+    //             type                = 13;
+    //             idc                 = 990009; 
+    //             style               = 0x00;
+    //             lineSpacing         = 1;
+	// 			x                   = 0.150 * safezoneW + safezoneX;
+	// 			y                   = 0.600 * safezoneH + safezoneY;
+	// 			w                   = 0.200 * safezoneW;
+	// 			h                   = 0.025 * safezoneH;
+    //             size                = 0.020;
+    //             colorBackground[]   = {0,0,0,0};
+    //             colorText[]         = {1,1,1,1};
+    //             text                = "";
+    //             font                = "PuristaSemiBold";
+    //             class Attributes {
+    //                 font            = "PuristaSemiBold";
+    //                 color           = "#FFFFFF";
+    //                 align           = "CENTER";
+    //                 valign          = "CENTER";
+    //                 shadow          = false;
+    //                 shadowColor     = "#000000";
+    //                 underline       = false;
+    //                 size            = "2";
+	// 			}; 
+    //         };
+	// 	};
+	// };
 
-    class VADS_line10 {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0.1;
-        fadeout                     = 2;
-        name                        = "VADS_line10";
-		onLoad                      = "with uiNameSpace do { VADS_line10 = _this select 0 }";
-        class controls {
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 9900010; 
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.150 * safezoneW + safezoneX;
-				y                   = 0.625 * safezoneH + safezoneY;
-				w                   = 0.200 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-                class Attributes {
-                    font            = "PuristaSemiBold";
-                    color           = "#FFFFFF";
-                    align           = "CENTER";
-                    valign          = "CENTER";
-                    shadow          = false;
-                    shadowColor     = "#000000";
-                    underline       = false;
-                    size            = "2";
-				}; 
-            };
-		};
-	};
+    // class VADS_line10 {
+    //     idd                         = 1000000;
+    //     movingEnable                = 0;
+    //     enableSimulation            = 1;
+    //     enableDisplay               = 1;
+    //     duration                    = 99999;
+    //     fadein                      = 0.1;
+    //     fadeout                     = 2;
+    //     name                        = "VADS_line10";
+	// 	onLoad                      = "with uiNameSpace do { VADS_line10 = _this select 0 }";
+    //     class controls {
+	// 	    class structuredText {
+    //             access              = 0;
+    //             type                = 13;
+    //             idc                 = 9900010; 
+    //             style               = 0x00;
+    //             lineSpacing         = 1;
+	// 			x                   = 0.150 * safezoneW + safezoneX;
+	// 			y                   = 0.625 * safezoneH + safezoneY;
+	// 			w                   = 0.200 * safezoneW;
+	// 			h                   = 0.025 * safezoneH;
+    //             size                = 0.020;
+    //             colorBackground[]   = {0,0,0,0};
+    //             colorText[]         = {1,1,1,1};
+    //             text                = "";
+    //             font                = "PuristaSemiBold";
+    //             class Attributes {
+    //                 font            = "PuristaSemiBold";
+    //                 color           = "#FFFFFF";
+    //                 align           = "CENTER";
+    //                 valign          = "CENTER";
+    //                 shadow          = false;
+    //                 shadowColor     = "#000000";
+    //                 underline       = false;
+    //                 size            = "2";
+	// 			}; 
+    //         };
+	// 	};
+	// };
 
-    class VADS_footer {
-        idd                         = 1000000;
-        movingEnable                = 0;
-        enableSimulation            = 1;
-        enableDisplay               = 1;
-        duration                    = 99999;
-        fadein                      = 0.1;
-        fadeout                     = 2;
-        name                        = "VADS_footer";
-		onLoad                      = "with uiNameSpace do { VADS_footer = _this select 0 }";
-        class controls {
-		    class structuredText {
-                access              = 0;
-                type                = 13;
-                idc                 = 990011; 
-                style               = 0x00;
-                lineSpacing         = 1;
-				x                   = 0.150 * safezoneW + safezoneX;
-				y                   = 0.650 * safezoneH + safezoneY;
-				w                   = 0.200 * safezoneW;
-				h                   = 0.025 * safezoneH;
-                size                = 0.020;
-                colorBackground[]   = {0,0,0,0};
-                colorText[]         = {1,1,1,1};
-                text                = "";
-                font                = "PuristaSemiBold";
-                class Attributes {
-                    font            = "PuristaSemiBold";
-                    color           = "#FFFFFF";
-                    align           = "CENTER";
-                    valign          = "CENTER";
-                    shadow          = false;
-                    shadowColor     = "#000000";
-                    underline       = false;
-                    size            = "2";
-				}; 
-            };
-		};
-	};
+    // class VADS_footer {
+    //     idd                         = 1000000;
+    //     movingEnable                = 0;
+    //     enableSimulation            = 1;
+    //     enableDisplay               = 1;
+    //     duration                    = 99999;
+    //     fadein                      = 0.1;
+    //     fadeout                     = 2;
+    //     name                        = "VADS_footer";
+	// 	onLoad                      = "with uiNameSpace do { VADS_footer = _this select 0 }";
+    //     class controls {
+	// 	    class structuredText {
+    //             access              = 0;
+    //             type                = 13;
+    //             idc                 = 990011; 
+    //             style               = 0x00;
+    //             lineSpacing         = 1;
+	// 			x                   = 0.150 * safezoneW + safezoneX;
+	// 			y                   = 0.650 * safezoneH + safezoneY;
+	// 			w                   = 0.200 * safezoneW;
+	// 			h                   = 0.025 * safezoneH;
+    //             size                = 0.020;
+    //             colorBackground[]   = {0,0,0,0};
+    //             colorText[]         = {1,1,1,1};
+    //             text                = "";
+    //             font                = "PuristaSemiBold";
+    //             class Attributes {
+    //                 font            = "PuristaSemiBold";
+    //                 color           = "#FFFFFF";
+    //                 align           = "CENTER";
+    //                 valign          = "CENTER";
+    //                 shadow          = false;
+    //                 shadowColor     = "#000000";
+    //                 underline       = false;
+    //                 size            = "2";
+	// 			}; 
+    //         };
+	// 	};
+	// };
 
 // ---------------------------------------------------------------------------------------------------------
 // ------------- VADS Classes - End
