@@ -24,13 +24,7 @@ So we really need to render everything first.
 */ 
 
 // vars and arrays initialisation	
-// VADS_selectedItem		= [];		
-// VADS_selectedLabel		= [];		
-// VADS_closeApp			= [];
 VADS_numericalInputbool	= false; 	
-// VADS_selectItemBool		= false;	
-// VADS_selectLabelBool	= false; 	
-// confirm? cancel?
 
 // key = "numpad 2"
 rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == 80)) then {
@@ -43,15 +37,3 @@ rgg_vads_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!V
 	execVM 'voiceActivatedDataStore\VADS_displayData.sqf'; 
 }"];
 
-/*
-
-execVM 'voiceActivatedDataStore\VADS_keyDownMonitor.sqf';
-VADS_setLabel = true;
-
-// VACF_Heading			= [];
-// VACF_Distance		= [];
-// VACF_ConfirmedCoords	= [];	
-
-// VACF_headingBool		= false;
-// VACF_distanceBool	= false;
-// VACF_showCoords		= false;

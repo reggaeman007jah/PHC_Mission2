@@ -34,7 +34,7 @@ if (_countData == 8) then {
 _lat = _this select 0;
 _lon = _this select 1;
 _newItem = _lat + _lon; // this links them together as one string 
-_testData = "testing yo"; // placeholder test data for the label
+_testData = ""; // placeholder test data for the label
 _testCombinedData = [_newItem, _testData]; // packaged array
 
 VAMP_dataList pushBack _testCombinedData; // this pushes the new single item containing coords and test label data to the rear of the array
