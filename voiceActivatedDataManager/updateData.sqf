@@ -154,42 +154,42 @@ if (_item ==3) then {
 
 if (_item ==4) then {
 	if (_label ==1) then {
-		_label = "PRIMARY OBJECTIVE";
+		_addLabel = "PRIMARY OBJECTIVE";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==2) then {
-		_label = "SECONDARY OBJECTIVE";
+		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		_label = "PRIMARY STAGING";
+		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		_label = "SECONDARY STAGING";
+		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==5) then {
-		_label = "ALPHA POINT";
+		_addLabel = "ALPHA POINT";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==6) then {
-		_label = "BRAVO POINT";
+		_addLabel = "BRAVO POINT";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==7) then {
-		_label = "CHARLIE POINT";
+		_addLabel = "CHARLIE POINT";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
 	if (_label ==8) then {
-		_label = "DELTA POINT";
+		_addLabel = "DELTA POINT";
 		(vamp_datalist select 4) deleteAt 1;
 		(VAMP_dataList select 4) pushback _addLabel;
 	};
@@ -197,42 +197,42 @@ if (_item ==4) then {
 
 if (_item ==5) then {
 	if (_label ==1) then {
-		_label = "PRIMARY OBJECTIVE";
+		_addLabel = "PRIMARY OBJECTIVE";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==2) then {
-		_label = "SECONDARY OBJECTIVE";
+		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		_label = "PRIMARY STAGING";
+		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		_label = "SECONDARY STAGING";
+		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==5) then {
-		_label = "ALPHA POINT";
+		_addLabel = "ALPHA POINT";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==6) then {
-		_label = "BRAVO POINT";
+		_addLabel = "BRAVO POINT";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==7) then {
-		_label = "CHARLIE POINT";
+		_addLabel = "CHARLIE POINT";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
 	if (_label ==8) then {
-		_label = "DELTA POINT";
+		_addLabel = "DELTA POINT";
 		(vamp_datalist select 3) deleteAt 1;
 		(VAMP_dataList select 3) pushback _addLabel;
 	};
@@ -240,42 +240,42 @@ if (_item ==5) then {
 
 if (_item ==6) then {
 	if (_label ==1) then {
-		_label = "PRIMARY OBJECTIVE";
+		_addLabel = "PRIMARY OBJECTIVE";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==2) then {
-		_label = "SECONDARY OBJECTIVE";
+		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		_label = "PRIMARY STAGING";
+		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		_label = "SECONDARY STAGING";
+		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==5) then {
-		_label = "ALPHA POINT";
+		_addLabel = "ALPHA POINT";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==6) then {
-		_label = "BRAVO POINT";
+		_addLabel = "BRAVO POINT";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==7) then {
-		_label = "CHARLIE POINT";
+		_addLabel = "CHARLIE POINT";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
 	if (_label ==8) then {
-		_label = "DELTA POINT";
+		_addLabel = "DELTA POINT";
 		(vamp_datalist select 2) deleteAt 1;
 		(VAMP_dataList select 2) pushback _addLabel;
 	};
@@ -283,42 +283,42 @@ if (_item ==6) then {
 
 if (_item ==7) then {
 	if (_label ==1) then {
-		_label = "PRIMARY OBJECTIVE";
+		_addLabel = "PRIMARY OBJECTIVE";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==2) then {
-		_label = "SECONDARY OBJECTIVE";
+		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		_label = "PRIMARY STAGING";
+		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		_label = "SECONDARY STAGING";
+		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==5) then {
-		_label = "ALPHA POINT";
+		_addLabel = "ALPHA POINT";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==6) then {
-		_label = "BRAVO POINT";
+		_addLabel = "BRAVO POINT";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==7) then {
-		_label = "CHARLIE POINT";
+		_addLabel = "CHARLIE POINT";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
 	if (_label ==8) then {
-		_label = "DELTA POINT";
+		_addLabel = "DELTA POINT";
 		(vamp_datalist select 1) deleteAt 1;
 		(VAMP_dataList select 1) pushback _addLabel;
 	};
@@ -326,42 +326,42 @@ if (_item ==7) then {
 
 if (_item ==8) then {
 	if (_label ==1) then {
-		_label = "PRIMARY OBJECTIVE";
+		_addLabel = "PRIMARY OBJECTIVE";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==2) then {
-		_label = "SECONDARY OBJECTIVE";
+		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		_label = "PRIMARY STAGING";
+		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		_label = "SECONDARY STAGING";
+		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==5) then {
-		_label = "ALPHA POINT";
+		_addLabel = "ALPHA POINT";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==6) then {
-		_label = "BRAVO POINT";
+		_addLabel = "BRAVO POINT";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==7) then {
-		_label = "CHARLIE POINT";
+		_addLabel = "CHARLIE POINT";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
 	if (_label ==8) then {
-		_label = "DELTA POINT";
+		_addLabel = "DELTA POINT";
 		(vamp_datalist select 0) deleteAt 1;
 		(VAMP_dataList select 0) pushback _addLabel;
 	};
