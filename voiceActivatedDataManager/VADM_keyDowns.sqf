@@ -1,7 +1,7 @@
 /*
-from:	voiceActivatedDataManager\initialiseVADS.sqf
-//to:		voiceActivatedCoordFinder\RSCnums\titleDisplay.sqf 		/ once 
-//to:		voiceActivatedCoordFinder\RSCnums\dataEntry.sqf 		/ every keypress 
+from:		voiceActivatedDataManager\initialiseVADS.sqf
+to:				
+to:					
 
 purpose:
 listens to numpad keypresses, and sends respective values (numpad nums) into arrays 

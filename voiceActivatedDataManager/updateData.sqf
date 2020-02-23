@@ -1,7 +1,6 @@
 /*
-
-from:
-to:
+from:		TBC 
+to:			voiceActivatedDataManager\VADM_displayData.sqf
 
 dataIn:		item selection, label selection
 dataOut:
@@ -9,19 +8,16 @@ dataOut:
 purpose:
 
 notes:
+// systemChat " ... YOU HAVE SELECTED ITEM:";
+// systemChat str _item;
+// systemChat " ... YOU HAVE SELECTED LABEL:";
+// systemChat str _label;
 
-
-
+There is ' a lot ' of duplication below, reduce this!
 */
-
 
 _item = _this select 0;
 _label = _this select 1;
-
-systemChat " ... YOU HAVE SELECTED ITEM:";
-systemChat str _item;
-systemChat " ... YOU HAVE SELECTED LABEL:";
-systemChat str _label;
 
 if (_item ==1) then {
 	if (_label ==1) then {
@@ -367,13 +363,20 @@ if (_item ==8) then {
 	};
 };
 
-systemChat ".............cycle?";
-
-	VADM_numericalInputbool = true; 
-	VADM_selectItemBool = true;
 execVM "voiceActivatedDataManager\VADM_displayData.sqf";
-execVM "voiceActivatedDataManager\initialiseVADM.sqf";
-execVM "voiceActivatedDataManager\VADM_keyDownMonitor.sqf";
+
+
+
+
+
+
+
+
+// VADM_numericalInputbool = true; 
+// VADM_selectItemBool = true;
+
+// execVM "voiceActivatedDataManager\initialiseVADM.sqf";
+// execVM "voiceActivatedDataManager\VADM_keyDownMonitor.sqf";
 
 
 /*

@@ -236,4 +236,10 @@ _setText = _display displayCtrl 990028;
 _setText ctrlSetStructuredText (parseText format ["DELTA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
+// ------------------------------------------------------------------------------
+// here we re-init the scripts to complete subsequent data management
 
+
+
+
+// ------------------------------------------------------------------------------

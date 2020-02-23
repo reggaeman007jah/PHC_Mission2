@@ -1,6 +1,6 @@
 /*
-from:	voiceActivatedDataStore\initialiseVADS.sqf
-to:		voiceActivatedDataStore\???.sqf 		
+from:	
+to:				
 
 purpose:
 loop-listener that validates user input, and changes state at correct times 
@@ -13,9 +13,9 @@ while {VADM_numericalInputbool} do {
 	// choose a label to add 
 	// close / repeat 
 
-	confirmedItem = count VADM_selectedItem; // should be 1 
-	confirmedLabel = count VADM_selectedLabel; // should be 1 
-	confirmClose = count VADM_confirm; // should be 1
+	confirmedItem 	= count VADM_selectedItem; // should be 1 
+	confirmedLabel 	= count VADM_selectedLabel; // should be 1 
+	confirmClose 	= count VADM_confirm; // should be 1
 
 	if (VADM_selectItemBool) then {
 		if (confirmedItem == 1) then {
@@ -45,6 +45,7 @@ while {VADM_numericalInputbool} do {
 				systemChat "item 8 selected";
 			};
 			systemChat "now select label";
+
 			VADM_selectItemBool = false;
 			VADM_selectLabelBool = true;
 		};
@@ -99,6 +100,7 @@ while {VADM_numericalInputbool} do {
 			if (_item == 2) then {
 				systemChat "went back";
 				// execVM "updateData.sqf";
+				// i assume you clear all input arrays and just go back to beginning?
 				VADM_confirmBool = false;
 			};
 		};

@@ -1,7 +1,7 @@
 /*
-from:	voiceActivatedDataManager\VADM_init.sqf
-to:		voiceActivatedDataManager\VADM_keyDowns.sqf				/ once
-to:		voiceActivatedDataManager\VADM_keyDownMonitor.sqf		/ once 
+from:		voiceActivatedDataManager\VADM_init.sqf
+to:			voiceActivatedDataManager\VADM_keyDowns.sqf				
+to:			voiceActivatedDataManager\VADM_keyDownMonitor.sqf		
 
 purpose:
 shows list of stored coords on-screen 
