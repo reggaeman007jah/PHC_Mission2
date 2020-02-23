@@ -1,6 +1,7 @@
 /*
 from:	VACF_execute.sqf 
 to:		voiceActivatedCoordFinder\RSCnums\RSCText.sqf			/ once, after processing 
+to: 	voiceActivatedCoordFinder\VACF_dataStorage.sqf 
 
 purpose:
 this ensures that there are aways 5 digits in lat and lon, regardless of prefixed zeros 

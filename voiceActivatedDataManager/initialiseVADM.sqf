@@ -5,7 +5,7 @@ to:		voiceActivatedDataManager\VADM_keyDownMonitor.sqf		/ once
 
 purpose:
 shows list of stored coords on-screen 
-it is populated via VACF, however here you can set labels for each line item 
+it is populated via input from VACF, however here you can set labels for each line item 
 
 declares arrays and states for the module 
 creates initial keydownEH to trigger the module, then removes this initial trigger after being actioned

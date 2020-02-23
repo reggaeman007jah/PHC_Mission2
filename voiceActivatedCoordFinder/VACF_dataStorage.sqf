@@ -1,10 +1,26 @@
+/*
+from:		voiceActivatedCoordFinder\presentation.sqf 
+to:		
+
+dataIn:		lat, lon data
+dataOut:	data pushBack VAMP_dataList
+
+purpose:
+this takes coord data parsed in, deletes the older item in the VAMP_dataList array, then send into that array (as a new item) both the coord data and a test string 
+
+notes:
+I need to eventually delete the test string, as well as test whether to remove the if/then statement at the beginning 
+
+see if I can conct the string, so there is a gap in between the 5 and 5
+*/
 
 _countData = count VAMP_dataList; // determines how many items we have in the data list 
+// ^^^ we should alwasy have 8, so why check this?
 
-systemChat "max-out check // items in VAMP_dataList after data entry:";
-systemChat str _countData;
+// systemChat "max-out check // items in VAMP_dataList after data entry:";
+// systemChat str _countData;
 
-// if we have 8 items, we delete the oldest one 
+// as we have 8 items from start, we delete the oldest one every time a new one is sent in
 // as we are using pushback, with the newest item at the back of the array, we delete position 0 as the oldest item 
 if (_countData == 8) then {
 	systemChat "deleting oldest data:";
@@ -12,6 +28,7 @@ if (_countData == 8) then {
 	systemChat "after deleting:";
 	systemChat str _deleteData;
 };
+// try this without ^^^ the if countData 8 ... I think this will just work, without this check
 
 // now we use the data parsed to us from presentation.sqf 
 _lat = _this select 0;

@@ -1,11 +1,12 @@
 /*
-from:	voiceActivatedDataStore\initialiseVADS.sqf
+from:	voiceActivatedDataStore\???
 to:		on-screen display		
 
 purpose:
 initial render instructions for all held VACF data 
 
 notes:
+VADS_entry1 - can these below be made local?
 
 
 */
@@ -65,10 +66,11 @@ purpose:
 RSC screen render of stored data 
 
 notes:
+is the first waitUntil correct here? 
 
 */
 
-_countData = count VAMP_dataList; // determines how many items we have in the data list 
+// _countData = count VAMP_dataList; // determines how many items we have in the data list 
 
 // if we have ten items, we delete the oldest one 
 // as we are using pushback, with the newest item at the back of the array, we delete position 0 as the oldest item 
@@ -182,75 +184,56 @@ _setText = _display displayCtrl 990008;
 _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_entry8, VADS_label8]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-// _display = uiNameSpace getVariable "VADS_line9";
-// _setText = _display displayCtrl 9900009;
-// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry9, _entry9Label]);
-// _setText ctrlSetBackgroundColor [0,0,0,0.5];
-
-// _display = uiNameSpace getVariable "VADS_line10";
-// _setText = _display displayCtrl 9900010;
-// _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry10, _entry10Label]);
-// _setText ctrlSetBackgroundColor [0,0,0,0.5];
-
 _display = uiNameSpace getVariable "VADS_footer";
 _setText = _display displayCtrl 990011;
 _setText ctrlSetStructuredText (parseText format ["Select and Edit Point"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-/*
-_arr = [1,2,3];
-_arr pushBack 4;
-hint str _arr; //[1,2,3,4]
 
-_arr = [1,2,3];
-_rem = _arr deleteAt 1;
-hint str [_rem, _arr]; //[2,[1,3]]990028
-*/
-
-// right render 
+// right render - change this to below left list!
 _display = uiNameSpace getVariable "VADS_RSClabelheader";
 _setText = _display displayCtrl 990020;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["AVAILABLE LABELS"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel1";
 _setText = _display displayCtrl 990021;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["PRIMRY OBJECTIVE"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel2";
 _setText = _display displayCtrl 990022;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["PRIMARY STAGING"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel3";
 _setText = _display displayCtrl 990023;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["SECONDARY OBJECTIVE"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel4";
 _setText = _display displayCtrl 990024;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["SECONDARY STAGING"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel5";
 _setText = _display displayCtrl 990025;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["ALPHA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel6";
 _setText = _display displayCtrl 990026;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["BRAVO POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel7";
 _setText = _display displayCtrl 990027;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["CHARLIE POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel8";
 _setText = _display displayCtrl 990028;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+_setText ctrlSetStructuredText (parseText format ["DELTA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 

@@ -1,47 +1,45 @@
+/*
+
+from:
+to:
+
+dataIn:		item selection, label selection
+dataOut:
+
+purpose:
+
+notes:
+
+
+
+*/
+
+
 _item = _this select 0;
 _label = _this select 1;
 
+systemChat " ... YOU HAVE SELECTED ITEM:";
 systemChat str _item;
+systemChat " ... YOU HAVE SELECTED LABEL:";
 systemChat str _label;
 
 if (_item ==1) then {
-	// if (_label ==1) then {
-	// 	VADS_label1 = "PRIMARY OBJECTIVE";
-	// };
-
-/*
-Example 1:
-_arr = [1,2,3];
-_arr pushBack 4;
-hint str _arr; //[1,2,3,4]
-Example 2:
-_arr = [1,[2,4],3];
-(_arr select 1) pushBack [5,6];
-hint str _arr //[1,[2,4,[5,6]],3]
-*/
-
 	if (_label ==1) then {
 		_addLabel = "PRIMARY OBJECTIVE";
-		// _deleteData = VAMP_dataList deleteAt ((7)1);
 		(vamp_datalist select 7) deleteAt 1;
-		// (VAMP_dataList select 7) select 1;
 		(VAMP_dataList select 7) pushback _addLabel;
-		// VADS_entry1 =  ((VAMP_dataList select 7) select 1);
 	};
 	if (_label ==2) then {
 		_addLabel = "SECONDARY OBJECTIVE";
 		(vamp_datalist select 7) deleteAt 1;
-		// _deleteData = VAMP_dataList deleteAt ((7)1);
 		(VAMP_dataList select 7) pushback _addLabel;
 	};
 	if (_label ==3) then {
-		// VADS_label1 = "PRIMARY STAGING";
 		_addLabel = "PRIMARY STAGING";
 		(vamp_datalist select 7) deleteAt 1;
 		(VAMP_dataList select 7) pushback _addLabel;
 	};
 	if (_label ==4) then {
-		// VADS_label1 = "SECONDARY STAGING";
 		_addLabel = "SECONDARY STAGING";
 		(vamp_datalist select 7) deleteAt 1;
 		(VAMP_dataList select 7) pushback _addLabel;
@@ -369,10 +367,20 @@ if (_item ==8) then {
 	};
 };
 
+execVM "voiceActivatedDataManager\VADM_displayData.sqf";
 
 
 
-
+/*
+Example 1:
+_arr = [1,2,3];
+_arr pushBack 4;
+hint str _arr; //[1,2,3,4]
+Example 2:
+_arr = [1,[2,4],3];
+(_arr select 1) pushBack [5,6];
+hint str _arr //[1,[2,4,[5,6]],3]
+*/
 
 
 
@@ -400,7 +408,7 @@ if (_item ==8) then {
 	// 	VADS_label1 = "DELTA POINT";
 	// };
 
-	execVM "voiceActivatedDataManager\VADM_displayData.sqf";
+	// execVM "voiceActivatedDataManager\VADM_displayData.sqf";
 	// execVM "voiceActivatedDataManager\initialiseVADM.sqf";
 
 
