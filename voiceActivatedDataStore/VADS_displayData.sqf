@@ -92,14 +92,32 @@ _countData = count VAMP_dataList; // determines how many items we have in the da
 
 // now we need a line for each item in the array (including empty items)
 // we populate them by using array position selectors 
-VADS_entry1 = VAMP_dataList select 7;
-VADS_entry2 = VAMP_dataList select 6;
-VADS_entry3 = VAMP_dataList select 5;
-VADS_entry4 = VAMP_dataList select 4;
-VADS_entry5 = VAMP_dataList select 3;
-VADS_entry6 = VAMP_dataList select 2;
-VADS_entry7 = VAMP_dataList select 1;
-VADS_entry8 = VAMP_dataList select 0;
+// VADS_entry1 = VAMP_dataList select 7;
+// VADS_entry2 = VAMP_dataList select 6;
+// VADS_entry3 = VAMP_dataList select 5;
+// VADS_entry4 = VAMP_dataList select 4;
+// VADS_entry5 = VAMP_dataList select 3;
+// VADS_entry6 = VAMP_dataList select 2;
+// VADS_entry7 = VAMP_dataList select 1;
+// VADS_entry8 = VAMP_dataList select 0;
+
+VADS_entry1 =  ((VAMP_dataList select 7) select 0);
+VADS_entry2 =  ((VAMP_dataList select 6) select 0);
+VADS_entry3 =  ((VAMP_dataList select 5) select 0);
+VADS_entry4 =  ((VAMP_dataList select 4) select 0);
+VADS_entry5 =  ((VAMP_dataList select 3) select 0);
+VADS_entry6 =  ((VAMP_dataList select 2) select 0);
+VADS_entry7 =  ((VAMP_dataList select 1) select 0);
+VADS_entry8 =  ((VAMP_dataList select 0) select 0);
+
+VADS_label1 =  ((VAMP_dataList select 7) select 1);
+VADS_label2 =  ((VAMP_dataList select 6) select 1);
+VADS_label3 =  ((VAMP_dataList select 5) select 1);
+VADS_label4 =  ((VAMP_dataList select 4) select 1);
+VADS_label5 =  ((VAMP_dataList select 3) select 1);
+VADS_label6 =  ((VAMP_dataList select 2) select 1);
+VADS_label7 =  ((VAMP_dataList select 1) select 1);
+VADS_label8 =  ((VAMP_dataList select 0) select 1);
 
 // allocate display layers
 disableSerialization;
@@ -133,12 +151,12 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line1";
 _setText = _display displayCtrl 990001;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2", VADS_main1 select 0, VADS_main1 select 1]);
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2", VADS_entry1, VADS_label1]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line2";
 _setText = _display displayCtrl 990002;
-_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_main2 select 0, VADS_main2 select 1]);
+_setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",VADS_entry2, VADS_label2]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_line3";
@@ -181,10 +199,10 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 // _setText ctrlSetStructuredText (parseText format ["Grid: %1 / Type: %2",_entry10, _entry10Label]);
 // _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_footer";
-_setText = _display displayCtrl 990011;
-_setText ctrlSetStructuredText (parseText format ["Select and Edit Point"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_footer";
+// _setText = _display displayCtrl 990011;
+// _setText ctrlSetStructuredText (parseText format ["Select and Edit Point"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 /*
 _arr = [1,2,3];
@@ -197,49 +215,49 @@ hint str [_rem, _arr]; //[2,[1,3]]990028
 */
 
 // right render 
-_display = uiNameSpace getVariable "VADS_RSClabelheader";
-_setText = _display displayCtrl 990020;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabelheader";
+// _setText = _display displayCtrl 990020;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel1";
-_setText = _display displayCtrl 990021;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel1";
+// _setText = _display displayCtrl 990021;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel2";
-_setText = _display displayCtrl 990022;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel2";
+// _setText = _display displayCtrl 990022;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel3";
-_setText = _display displayCtrl 990023;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel3";
+// _setText = _display displayCtrl 990023;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel4";
-_setText = _display displayCtrl 990024;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel4";
+// _setText = _display displayCtrl 990024;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel5";
-_setText = _display displayCtrl 990025;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel5";
+// _setText = _display displayCtrl 990025;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel6";
-_setText = _display displayCtrl 990026;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel6";
+// _setText = _display displayCtrl 990026;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel7";
-_setText = _display displayCtrl 990027;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel7";
+// _setText = _display displayCtrl 990027;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
-_display = uiNameSpace getVariable "VADS_RSClabel8";
-_setText = _display displayCtrl 990028;
-_setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
-_setText ctrlSetBackgroundColor [0,0,0,0.5];
+// _display = uiNameSpace getVariable "VADS_RSClabel8";
+// _setText = _display displayCtrl 990028;
+// _setText ctrlSetStructuredText (parseText format ["Tac-Points"]);
+// _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 
