@@ -92,28 +92,25 @@ _countData = count VAMP_dataList; // determines how many items we have in the da
 
 // now we need a line for each item in the array (including empty items)
 // we populate them by using array position selectors 
-VADS_entry1 = VAMP_dataList select 7;
-VADS_entry2 = VAMP_dataList select 6;
-VADS_entry3 = VAMP_dataList select 5;
-VADS_entry4 = VAMP_dataList select 4;
-VADS_entry5 = VAMP_dataList select 3;
-VADS_entry6 = VAMP_dataList select 2;
-VADS_entry7 = VAMP_dataList select 1;
-VADS_entry8 = VAMP_dataList select 0;
-// _entry9 = VAMP_dataList select 8;
-// _entry10 = VAMP_dataList select 9;
+VADS_entry1 =  ((VAMP_dataList select 7) select 0);
+VADS_entry2 =  ((VAMP_dataList select 6) select 0);
+VADS_entry3 =  ((VAMP_dataList select 5) select 0);
+VADS_entry4 =  ((VAMP_dataList select 4) select 0);
+VADS_entry5 =  ((VAMP_dataList select 3) select 0);
+VADS_entry6 =  ((VAMP_dataList select 2) select 0);
+VADS_entry7 =  ((VAMP_dataList select 1) select 0);
+VADS_entry8 =  ((VAMP_dataList select 0) select 0);
 
-// dummy label data - I think these need to be globals 
-_entry1Label = "test";
-_entry2Label = "test";
-_entry3Label = "test";
-_entry4Label = "test";
-_entry5Label = "test";
-_entry6Label = "test";
-_entry7Label = "test";
-_entry8Label = "test";
-// _entry9Label = "test";
-// _entry10Label = "test";
+VADS_label1 =  ((VAMP_dataList select 7) select 1);
+VADS_label2 =  ((VAMP_dataList select 6) select 1);
+VADS_label3 =  ((VAMP_dataList select 5) select 1);
+VADS_label4 =  ((VAMP_dataList select 4) select 1);
+VADS_label5 =  ((VAMP_dataList select 3) select 1);
+VADS_label6 =  ((VAMP_dataList select 2) select 1);
+VADS_label7 =  ((VAMP_dataList select 1) select 1);
+VADS_label8 =  ((VAMP_dataList select 0) select 1);
+
+
 
 // allocate display layers
 disableSerialization;

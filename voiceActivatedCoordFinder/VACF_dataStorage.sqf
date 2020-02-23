@@ -1,11 +1,10 @@
 
-
 _countData = count VAMP_dataList; // determines how many items we have in the data list 
 
 systemChat "max-out check // items in VAMP_dataList after data entry:";
 systemChat str _countData;
 
-// if we have ten items, we delete the oldest one 
+// if we have 8 items, we delete the oldest one 
 // as we are using pushback, with the newest item at the back of the array, we delete position 0 as the oldest item 
 if (_countData == 8) then {
 	systemChat "deleting oldest data:";
@@ -18,12 +17,51 @@ if (_countData == 8) then {
 _lat = _this select 0;
 _lon = _this select 1;
 _newItem = _lat + _lon; // this links them together as one string 
-VAMP_dataList pushBack _newItem; // this pushes the new single item to the rear of the array
+_testData = "testing yo"; // placeholder test data for the label
+_testCombinedData = [_newItem, _testData]; // packaged array
+
+VAMP_dataList pushBack _testCombinedData; // this pushes the new single item containing coords and test label data to the rear of the array
+
 systemChat "pushback data done";
 systemChat str VAMP_dataList;
 
 // now we need a line for each item in the array (including empty items)
 // we populate them by using array position selectors 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
