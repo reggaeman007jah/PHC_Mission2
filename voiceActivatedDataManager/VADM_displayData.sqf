@@ -1,5 +1,5 @@
 /*
-from:	voiceActivatedDataStore\???
+from:	voiceActivatedDataManager\updateData.sqf
 to:		on-screen display		
 
 purpose:
@@ -198,42 +198,42 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel1";
 _setText = _display displayCtrl 990021;
-_setText ctrlSetStructuredText (parseText format ["PRIMRY OBJECTIVE"]);
+_setText ctrlSetStructuredText (parseText format ["1: PRIMARY OBJECTIVE"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel2";
 _setText = _display displayCtrl 990022;
-_setText ctrlSetStructuredText (parseText format ["PRIMARY STAGING"]);
+_setText ctrlSetStructuredText (parseText format ["2: SECONDARY OBJECTIVE"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel3";
 _setText = _display displayCtrl 990023;
-_setText ctrlSetStructuredText (parseText format ["SECONDARY OBJECTIVE"]);
+_setText ctrlSetStructuredText (parseText format ["3: STAGING - PRIMARY"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel4";
 _setText = _display displayCtrl 990024;
-_setText ctrlSetStructuredText (parseText format ["SECONDARY STAGING"]);
+_setText ctrlSetStructuredText (parseText format ["4: STAGING - SECONDARY"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel5";
 _setText = _display displayCtrl 990025;
-_setText ctrlSetStructuredText (parseText format ["ALPHA POINT"]);
+_setText ctrlSetStructuredText (parseText format ["5: ALPHA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel6";
 _setText = _display displayCtrl 990026;
-_setText ctrlSetStructuredText (parseText format ["BRAVO POINT"]);
+_setText ctrlSetStructuredText (parseText format ["6: BRAVO POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel7";
 _setText = _display displayCtrl 990027;
-_setText ctrlSetStructuredText (parseText format ["CHARLIE POINT"]);
+_setText ctrlSetStructuredText (parseText format ["7: CHARLIE POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 _display = uiNameSpace getVariable "VADS_RSClabel8";
 _setText = _display displayCtrl 990028;
-_setText ctrlSetStructuredText (parseText format ["DELTA POINT"]);
+_setText ctrlSetStructuredText (parseText format ["8: DELTA POINT"]);
 _setText ctrlSetBackgroundColor [0,0,0,0.5];
 
 // ------------------------------------------------------------------------------
@@ -242,7 +242,6 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 VADM_selectedItem		= [];	
 VADM_selectedLabel		= [];	
 VADM_confirm			= [];
-VADM_confirmBool 		= false;
 VADM_selectItemBool		= true;
 
 // ------------------------------------------------------------------------------

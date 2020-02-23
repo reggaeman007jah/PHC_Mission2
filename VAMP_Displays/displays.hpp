@@ -931,7 +931,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990020; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.375 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -971,7 +971,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990021; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.400 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1011,7 +1011,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990022; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.425 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1051,7 +1051,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990023; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.450 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1091,7 +1091,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990024; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.475 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1131,7 +1131,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990025; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.500 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1171,7 +1171,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990026; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.525 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1211,7 +1211,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990027; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.550 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
@@ -1251,7 +1251,7 @@ These can be objectives, waypoints, LZs, full label list TBC
                 idc                 = 990028; 
                 style               = 0x00;
                 lineSpacing         = 1;
-				x                   = 0.650 * safezoneW + safezoneX;
+				x                   = 0.400 * safezoneW + safezoneX;
 				y                   = 0.575 * safezoneH + safezoneY;
 				w                   = 0.200 * safezoneW;
 				h                   = 0.025 * safezoneH;
