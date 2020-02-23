@@ -98,13 +98,14 @@ while {VADM_numericalInputbool} do {
 				VADM_confirmBool = false;
 			};
 			if (_item == 2) then {
-				systemChat "went back";
-				// execVM "updateData.sqf";
-				// i assume you clear all input arrays and just go back to beginning?
-				VADM_confirmBool = false;
+				systemChat "Returned to main menu without making a selection";
+				VADM_selectedItem		= [];	
+				VADM_selectedLabel		= [];	
+				VADM_confirm			= [];
+				VADM_confirmBool 		= false;
+				VADM_selectItemBool		= true;
 			};
 		};
-
 	};
 	sleep 0.2; 
 };	

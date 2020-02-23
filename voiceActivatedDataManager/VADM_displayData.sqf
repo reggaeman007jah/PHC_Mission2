@@ -239,7 +239,10 @@ _setText ctrlSetBackgroundColor [0,0,0,0.5];
 // ------------------------------------------------------------------------------
 // here we re-init the scripts to complete subsequent data management
 
-
-
+VADM_selectedItem		= [];	
+VADM_selectedLabel		= [];	
+VADM_confirm			= [];
+VADM_confirmBool 		= false;
+VADM_selectItemBool		= true;
 
 // ------------------------------------------------------------------------------

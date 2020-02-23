@@ -22,16 +22,21 @@ So we really need to render everything first.
 
 */ 
 
+// --------------------------------------------------------
+
 // vars and arrays initialisation	
-VADM_selectedItem		= [];		
-VADM_selectedLabel		= [];	
-VADM_confirm			= [];
-// VADS_closeApp			= [];
-VADM_numericalInputbool	= false; 	
-VADM_selectItemBool		= false;	
+VADM_numericalInputbool	= false; 
+
+VADM_selectItemBool		= false;
+VADM_selectedItem		= [];	
+
 VADM_selectLabelBool	= false; 
-VADM_confirmBool		= false;	
-// confirm? cancel?
+VADM_selectedLabel		= [];	
+
+VADM_confirmBool		= false;
+VADM_confirm			= [];
+
+// --------------------------------------------------------
 
 // key = "numpad 5"
 rgg_vadm_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == 76)) then {
@@ -44,16 +49,3 @@ rgg_vadm_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!V
 	execVM 'voiceActivatedDataManager\VADM_keyDowns.sqf'; 
 	execVM 'voiceActivatedDataManager\VADM_displayData.sqf'; 
 }"];
-
-/*
-
-
-VADS_setLabel = true;
-
-// VACF_Heading			= [];
-// VACF_Distance		= [];
-// VACF_ConfirmedCoords	= [];	
-
-// VACF_headingBool		= false;
-// VACF_distanceBool	= false;
-// VACF_showCoords		= false;
