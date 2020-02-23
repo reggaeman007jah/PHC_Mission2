@@ -367,8 +367,13 @@ if (_item ==8) then {
 	};
 };
 
-execVM "voiceActivatedDataManager\VADM_displayData.sqf";
+systemChat ".............cycle?";
 
+	VADM_numericalInputbool = true; 
+	VADM_selectItemBool = true;
+execVM "voiceActivatedDataManager\VADM_displayData.sqf";
+execVM "voiceActivatedDataManager\initialiseVADM.sqf";
+execVM "voiceActivatedDataManager\VADM_keyDownMonitor.sqf";
 
 
 /*
