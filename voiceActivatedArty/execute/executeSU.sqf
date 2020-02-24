@@ -4,10 +4,7 @@ to:		voiceActivatedArty\clearKeyDowns.sqf
 to:		voiceActivatedArty\initialiseVAA.sqf
 
 purpose:
-fnc that manages all ze smokes
-number parsing 
-marker creation - is this even needed though?
-if so, make the marker the colour of the smoke?
+
 
 notes:
 numericalInput = false; -- what is this??

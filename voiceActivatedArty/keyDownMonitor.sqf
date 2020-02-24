@@ -1,28 +1,40 @@
 /*
-from:	voiceActivatedArty\initialiseVAA.sqf
-to:		voiceActivatedArty\clearKeyDowns.sqf
-to:		voiceActivatedArty\initialiseVAA.sqf	 
-to: 	voiceActivatedArty\execute\confirmExecute.sqf	/ makes booms
+from:		voiceActivatedArty\initialiseVAA.sqf
+to:			voiceActivatedArty\clearKeyDowns.sqf
+to:			voiceActivatedArty\initialiseVAA.sqf	 
+to: 		voiceActivatedArty\execute\confirmExecute.sqf	/ makes booms
 
 purpose:
 loop-listener that validates user input, and changes state at correct times 
 
 notes:
 unsure if the return loop back to initialiseVAA is correct .. should this go further back?
+
+issues:
+Sometimes aborting the call results in a freeze - test this more across all scripts 
 */
 
 while {numericalInputbool} do {
 
+	// ------------------------------------------- VALIDATION CONTROLS START
+	// This Val-Ctrl section uses array entries to understand when something has been selected 
+	// For example, if confirmedColour == 1, that simply means that a colour has been selected, but does not record the actual colour
+	// Also note that not all items are called; HE will never require a colour input for ex.  
+	// Further ex. SU will never require radius or number of rounds 
+	
 	// counts entry of inputted values
-	confirmedTypeHE	= count splashArtyTypeHE;
-	confirmedTypeSU	= count splashArtyTypeSU;
-	confirmedTypeSM	= count splashArtyTypeSM;
-	confirmedTypeFL	= count splashArtyTypeFL;
+	confirmedTypeHE		= count splashArtyTypeHE;
+	confirmedTypeSU		= count splashArtyTypeSU;
+	confirmedTypeSUx2	= count splashArtyTypeSUx2;
+	confirmedTypeSUx3	= count splashArtyTypeSUx3;
+	confirmedTypeSUx4	= count splashArtyTypeSUx4;
+	confirmedTypeSM		= count splashArtyTypeSM;
+	confirmedTypeFL		= count splashArtyTypeFL;
 
-	// this checks for 'any colour', but does not extract the type of colour (the number value)
+	// this checks for 'any colour'
 	confirmedColour	= count splashOrdColour;
 
-	// this checks for the number of digits held in the lat/lon arrays (4 or 5)
+	// this checks for the number of digits held in the lat/lon arrays (4 or 5 for SU)
 	confirmedLatDigits = count splashCoordsLat;
 	confirmedLonDigits = count splashCoordsLon;
 
@@ -35,6 +47,7 @@ while {numericalInputbool} do {
 	// this checks whether the call has has a 'final confirmation', and triggers action if yes
 	confirmedExecute = count splashConfirm;
 
+	// ------------------------------------------- VALIDATION CONTROLS END
 
 	// TYPE
 	if (artyTypeBool) then {
@@ -48,7 +61,28 @@ while {numericalInputbool} do {
 		};
 
 		if (confirmedTypeSU == 1) then {
-			systemChat "GBU Hellfire confirmed";
+			systemChat "Single GBU Hellfire confirmed";
+			systemChat "Confirm latitude";
+			artyTypeBool = false;
+			latCoordInputBool = true;
+		};
+
+		if (confirmedTypeSUx2 == 1) then {
+			systemChat "Sequenced (x2) GBU Hellfires confirmed";
+			systemChat "Confirm latitude";
+			artyTypeBool = false;
+			latCoordInputBool = true;
+		};
+
+		if (confirmedTypeSUx3 == 1) then {
+			systemChat "Sequenced (x3) GBU Hellfires confirmed";
+			systemChat "Confirm latitude";
+			artyTypeBool = false;
+			latCoordInputBool = true;
+		};
+
+		if (confirmedTypeSUx4 == 1) then {
+			systemChat "Sequenced (x4) GBU Hellfires confirmed";
 			systemChat "Confirm latitude";
 			artyTypeBool = false;
 			latCoordInputBool = true;
