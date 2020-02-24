@@ -25,9 +25,9 @@ while {numericalInputbool} do {
 	// counts entry of inputted values
 	confirmedTypeHE		= count splashArtyTypeHE;
 	confirmedTypeSU		= count splashArtyTypeSU;
-	confirmedTypeSUx2	= count splashArtyTypeSUx2;
-	confirmedTypeSUx3	= count splashArtyTypeSUx3;
-	confirmedTypeSUx4	= count splashArtyTypeSUx4;
+	// confirmedTypeSU2	= count splashArtyTypeSUx2;
+	// confirmedTypeSU3	= count splashArtyTypeSUx3;
+	// confirmedTypeSU4	= count splashArtyTypeSUx4;
 	confirmedTypeSM		= count splashArtyTypeSM;
 	confirmedTypeFL		= count splashArtyTypeFL;
 
@@ -67,7 +67,7 @@ while {numericalInputbool} do {
 			latCoordInputBool = true;
 		};
 
-		// if (confirmedTypeSUx2 == 1) then {
+		// if (confirmedTypeSU2 == 1) then {
 		// 	systemChat "Sequenced (x2) GBU Hellfires confirmed";
 		// 	systemChat "Confirm latitude";
 		// 	artyTypeBool = false;
@@ -86,7 +86,7 @@ while {numericalInputbool} do {
 		// 	systemChat "Confirm latitude";
 		// 	artyTypeBool = false;
 		// 	latCoordInputBool = true;
-		};
+		// };
 
 		if (confirmedTypeSM == 1)  then {
 			systemChat "Smoke confirmed";
