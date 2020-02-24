@@ -67,25 +67,25 @@ while {numericalInputbool} do {
 			latCoordInputBool = true;
 		};
 
-		if (confirmedTypeSUx2 == 1) then {
-			systemChat "Sequenced (x2) GBU Hellfires confirmed";
-			systemChat "Confirm latitude";
-			artyTypeBool = false;
-			latCoordInputBool = true;
-		};
+		// if (confirmedTypeSUx2 == 1) then {
+		// 	systemChat "Sequenced (x2) GBU Hellfires confirmed";
+		// 	systemChat "Confirm latitude";
+		// 	artyTypeBool = false;
+		// 	latCoordInputBool = true;
+		// };
 
-		if (confirmedTypeSUx3 == 1) then {
-			systemChat "Sequenced (x3) GBU Hellfires confirmed";
-			systemChat "Confirm latitude";
-			artyTypeBool = false;
-			latCoordInputBool = true;
-		};
+		// if (confirmedTypeSUx3 == 1) then {
+		// 	systemChat "Sequenced (x3) GBU Hellfires confirmed";
+		// 	systemChat "Confirm latitude";
+		// 	artyTypeBool = false;
+		// 	latCoordInputBool = true;
+		// };
 
-		if (confirmedTypeSUx4 == 1) then {
-			systemChat "Sequenced (x4) GBU Hellfires confirmed";
-			systemChat "Confirm latitude";
-			artyTypeBool = false;
-			latCoordInputBool = true;
+		// if (confirmedTypeSUx4 == 1) then {
+		// 	systemChat "Sequenced (x4) GBU Hellfires confirmed";
+		// 	systemChat "Confirm latitude";
+		// 	artyTypeBool = false;
+		// 	latCoordInputBool = true;
 		};
 
 		if (confirmedTypeSM == 1)  then {
