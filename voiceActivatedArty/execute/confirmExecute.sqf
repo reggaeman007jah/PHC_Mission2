@@ -36,51 +36,120 @@ We need a system to recognise if any of these are 'filled' to either move onto t
 */
 
 // SWITCH IS NEEDED HERE!!
+// if this works this will really show the power of the switch ..
+// compare to a run of if/thens ... switch will break out as soon as there's a match, which is exactly what we need here
+
+// _randomNumber = floor random 1000;
+
+// switch (true) do
+// {	case (_randomNumber > 500):  {hint "more than 500"};
+// 	case (_randomNumber < 500):  {hint "less than 500"};
+// 	case (_randomNumber == 500): {hint "exactly 500"};
+// };
+
+
+
+
+switch (true) do {	
+	case (!shot1Data):  {
+		_parsed1Lat = splashCoordsLat joinString "";
+		_parsed1Lon = splashCoordsLon joinString "";
+		_parsed1Rnd = splashRounds joinString "";
+		_parsed1Rad = splashRadius joinString "";
+		_parsedLat = parseNumber _parsed1Lat;
+		_parsedLon = parseNumber _parsed1Lon;
+		_parsedRounds = parseNumber _parsed1Rnd;
+		_parsedRadius = parseNumber _parsed1Rad;
+		shot1Data = true;
+	};
+	case (!shot2Data):  {
+		_parsed1Lat2 = splashCoordsLat joinString "";
+		_parsed1Lon2 = splashCoordsLon joinString "";
+		_parsed1Rnd2 = splashRounds joinString "";
+		_parsed1Rad2 = splashRadius joinString "";
+		_parsedLat2 = parseNumber _parsed1Lat2;
+		_parsedLon2 = parseNumber _parsed1Lon2;
+		_parsedRounds2 = parseNumber _parsed1Rnd2;
+		_parsedRadius2 = parseNumber _parsed1Rad2;
+		shot2Data = true;
+	};
+	case (!shot3Data):  {
+		_parsed1Lat3 = splashCoordsLat joinString "";
+		_parsed1Lon3 = splashCoordsLon joinString "";
+		_parsed1Rnd3 = splashRounds joinString "";
+		_parsed1Rad3 = splashRadius joinString "";
+		_parsedLat3 = parseNumber _parsed1Lat3;
+		_parsedLon3 = parseNumber _parsed1Lon3;
+		_parsedRounds3 = parseNumber _parsed1Rnd3;
+		_parsedRadius3 = parseNumber _parsed1Rad3;
+		shot3Data = true;
+	};
+	case (!shot4Data):  {
+		_parsed1Lat4 = splashCoordsLat joinString "";
+		_parsed1Lon4 = splashCoordsLon joinString "";
+		_parsed1Rnd4 = splashRounds joinString "";
+		_parsed1Rad4 = splashRadius joinString "";
+		_parsedLat4 = parseNumber _parsed1Lat4;
+		_parsedLon4 = parseNumber _parsed1Lon4;
+		_parsedRounds4 = parseNumber _parsed1Rnd4;
+		_parsedRadius4 = parseNumber _parsed1Rad4;
+		shot4Data = true;
+	};
+	default {hint "no more mate"};
+};
+
+// I need to now offer the player to re-do another shot, or continue with the fire mission 
+systemChat "thank you for the selection - do you want another, or do you want to execute?";
+systemChat "press 1 to add another shot, or press 2 to confirm and execute";
+
 
 
 // shot 1 
 
-	_parsed1Lat = splashCoordsLat joinString "";
-	_parsed1Lon = splashCoordsLon joinString "";
-	_parsed1Rnd = splashRounds joinString "";
-	_parsed1Rad = splashRadius joinString "";
-	_parsedLat = parseNumber _parsed1Lat;
-	_parsedLon = parseNumber _parsed1Lon;
-	_parsedRounds = parseNumber _parsed1Rnd;
-	_parsedRadius = parseNumber _parsed1Rad;
-	shot1Data = true;
+// 	_parsed1Lat = splashCoordsLat joinString "";
+// 	_parsed1Lon = splashCoordsLon joinString "";
+// 	_parsed1Rnd = splashRounds joinString "";
+// 	_parsed1Rad = splashRadius joinString "";
+// 	_parsedLat = parseNumber _parsed1Lat;
+// 	_parsedLon = parseNumber _parsed1Lon;
+// 	_parsedRounds = parseNumber _parsed1Rnd;
+// 	_parsedRadius = parseNumber _parsed1Rad;
+// 	shot1Data = true;
 
-// shot 2
+// // shot 2
 
-	_parsed1Lat2 = splashCoordsLat joinString "";
-	_parsed1Lon2 = splashCoordsLon joinString "";
-	_parsed1Rnd2 = splashRounds joinString "";
-	_parsed1Rad2 = splashRadius joinString "";
-	_parsedLat2 = parseNumber _parsed1Lat2;
-	_parsedLon2 = parseNumber _parsed1Lon2;
-	_parsedRounds2 = parseNumber _parsed1Rnd2;
-	_parsedRadius2 = parseNumber _parsed1Rad2;
+// 	_parsed1Lat2 = splashCoordsLat joinString "";
+// 	_parsed1Lon2 = splashCoordsLon joinString "";
+// 	_parsed1Rnd2 = splashRounds joinString "";
+// 	_parsed1Rad2 = splashRadius joinString "";
+// 	_parsedLat2 = parseNumber _parsed1Lat2;
+// 	_parsedLon2 = parseNumber _parsed1Lon2;
+// 	_parsedRounds2 = parseNumber _parsed1Rnd2;
+// 	_parsedRadius2 = parseNumber _parsed1Rad2;
+// 	shot2Data = true;
 
 
-// shot 3
-_parsed1Lat3 = splashCoordsLat joinString "";
-_parsed1Lon3 = splashCoordsLon joinString "";
-_parsed1Rnd3 = splashRounds joinString "";
-_parsed1Rad3 = splashRadius joinString "";
-_parsedLat3 = parseNumber _parsed1Lat3;
-_parsedLon3 = parseNumber _parsed1Lon3;
-_parsedRounds3 = parseNumber _parsed1Rnd3;
-_parsedRadius3 = parseNumber _parsed1Rad3;
+// // shot 3
+// 	_parsed1Lat3 = splashCoordsLat joinString "";
+// 	_parsed1Lon3 = splashCoordsLon joinString "";
+// 	_parsed1Rnd3 = splashRounds joinString "";
+// 	_parsed1Rad3 = splashRadius joinString "";
+// 	_parsedLat3 = parseNumber _parsed1Lat3;
+// 	_parsedLon3 = parseNumber _parsed1Lon3;
+// 	_parsedRounds3 = parseNumber _parsed1Rnd3;
+// 	_parsedRadius3 = parseNumber _parsed1Rad3;
+// 	shot3Data = true;
 
-// shot 4
-_parsed1Lat4 = splashCoordsLat joinString "";
-_parsed1Lon4 = splashCoordsLon joinString "";
-_parsed1Rnd4 = splashRounds joinString "";
-_parsed1Rad4 = splashRadius joinString "";
-_parsedLat4 = parseNumber _parsed1Lat4;
-_parsedLon4 = parseNumber _parsed1Lon4;
-_parsedRounds4 = parseNumber _parsed1Rnd4;
-_parsedRadius4 = parseNumber _parsed1Rad4;
+// // shot 4
+// 	_parsed1Lat4 = splashCoordsLat joinString "";
+// 	_parsed1Lon4 = splashCoordsLon joinString "";
+// 	_parsed1Rnd4 = splashRounds joinString "";
+// 	_parsed1Rad4 = splashRadius joinString "";
+// 	_parsedLat4 = parseNumber _parsed1Lat4;
+// 	_parsedLon4 = parseNumber _parsed1Lon4;
+// 	_parsedRounds4 = parseNumber _parsed1Rnd4;
+// 	_parsedRadius4 = parseNumber _parsed1Rad4;
+// 	shot4Data = true;
 
 
 
