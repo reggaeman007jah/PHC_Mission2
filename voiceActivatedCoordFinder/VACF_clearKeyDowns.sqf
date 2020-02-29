@@ -10,8 +10,6 @@ _ehVACF_Remove9 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vac
 _ehVACF_Remove10 	= (findDisplay 46) displayRemoveEventHandler ["keyDown",rgg_vacf_kd9];
 _ehRemove11 		= (findDisplay 46) displayRemoveEventHandler ['keyDown',rgg_vacf_cnl];
 
-VACF_numericalInputbool = false;
-
 1 cutRsc ["default","PLAIN"];
 20 cutRsc ["default","PLAIN"];
 21 cutRsc ["default","PLAIN"];
@@ -24,6 +22,7 @@ VACF_numericalInputbool = false;
 28 cutRsc ["default","PLAIN"];
 29 cutRsc ["default","PLAIN"];
 
+VACF_numericalInputbool = false;
 vamp = false;
 
 

@@ -37,6 +37,7 @@ RGG_callVACF = {
 // systemChat "items in VAMP_dataList after data entry and just before re-init:";
 // systemChat str _countData;
 
+hint "initialising VACF";
 execVM "voiceActivatedCoordFinder\initialiseVACF.sqf";
 
 

@@ -42,6 +42,8 @@ RGG_reset = {
 	execVM "voiceActivatedSyncShot\VASS_init.sqf";
 };
 
+sleep 20;
+
 _shotNumber = shotCount select 0;
 
 if (_shotNumber == 1) then {
@@ -61,7 +63,7 @@ if (_shotNumber == 2) then {
 if (_shotNumber == 3) then {
 	// shot 3
 	_finalStrike1 = "Bo_GBU12_LGB" createVehicle _strike1;
-	sleep 1;
+	sleep 1.9;
 	_finalStrike2 = "Bo_GBU12_LGB" createVehicle _strike2;
 	sleep 1;
 	_finalStrike3 = "Bo_GBU12_LGB" createVehicle _strike3;
@@ -73,9 +75,9 @@ if (_shotNumber == 4) then {
 	_finalStrike1 = "Bo_GBU12_LGB" createVehicle _strike1;
 	sleep 1;
 	_finalStrike2 = "Bo_GBU12_LGB" createVehicle _strike2;
-	sleep 1;
+	sleep 1.5;
 	_finalStrike3 = "Bo_GBU12_LGB" createVehicle _strike3;
-	sleep 1;
+	sleep 1.2;
 	_finalStrike4 = "Bo_GBU12_LGB" createVehicle _strike4;
 	call RGG_reset;
 };
