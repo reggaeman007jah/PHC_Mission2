@@ -14,6 +14,10 @@ it also sends data to a cache for further functions like - adjust fire
 notes:
 */
 
+execVM "voiceActivatedArty\clearKeyDowns.sqf";
+sleep 1;
+execVM "voiceActivatedArty\initialiseVAA.sqf";
+
 // if (artyType == SURGICAL) then {
 // 	_parsed1Lat = splashCoordsLat joinString "0";
 // 	_parsed1Lon = splashCoordsLon joinString "0";

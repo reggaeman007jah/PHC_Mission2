@@ -85,6 +85,8 @@ class RscTitles {
     // It should also enable a label association, maybe more than one label per line 
     // Question - should this work within the map as well as in-game? A map view might be nice.
     // ---------------------------------------------------------------------------------------------------------
+    
+     
     class VACF {
         idd                         = 1000000;
         movingEnable                = 0;
