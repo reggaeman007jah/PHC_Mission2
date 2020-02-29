@@ -12,7 +12,7 @@ make these vars LOCAL FFS!
 */
 
 // Surgical execute
-// execVM "voiceActivatedArty\clearKeyDowns.sqf";
+execVM "voiceActivatedArty\clearKeyDowns.sqf";
 
 _lat = _this select 0;
 _lon = _this select 1;
@@ -54,8 +54,7 @@ RGG_callArty1 = {
 
 	numericalInputBool = false;
 	deleteMarker "gun1";
-	// execVM "voiceActivatedArty\initialiseVAA.sqf";
-	
+	execVM "voiceActivatedArty\initialiseVAA.sqf";
 };
 
 ["Bo_GBU12_LGB", _pos, 1, 1] call RGG_callArty1;	

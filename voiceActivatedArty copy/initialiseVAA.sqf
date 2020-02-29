@@ -49,17 +49,8 @@ lonCoordInputBool 		= false;
 roundsInputBool 		= false; 		 
 radiusInputBool 		= false; 		 
 confirmActionBool 		= false; 
-
 //new 
 syncInputBool			= false;
-
-// new
-shot1Data 				= false;
-shot2Data 				= false;
-shot3Data 				= false;
-shot4Data				= false;
-moreOrExecute			= false;
-// these are linked to the repeat fire theory/test
 
 // key = "4"
 rgg_Activate = (findDisplay 46) displayAddEventHandler ["KeyDown", "if ((!VAMP) && (_this select 1 == 75)) then {

@@ -202,8 +202,7 @@ while {numericalInputbool} do {
 
 				systemChat "final confirmation needed";
 				lonCoordInputBool = false;
-				// confirmActionBool = true; // here we add a new step...
-				moreOrExecute = true;
+				confirmActionBool = true;
 			};
 			
 		} else {
@@ -218,62 +217,6 @@ while {numericalInputbool} do {
 				lonCoordInputBool = false;
 				roundsInputBool = true;
 			};
-		};
-	};
-
-	// NEW - ensure baseBools are set 
-	if (moreOrExecute) then {
-		// you now choose whether to add more to the call, or to execute 
-		switch (true) do {	
-			case (!shot1Data):  {
-				_parsed1Lat = splashCoordsLat joinString "";
-				_parsed1Lon = splashCoordsLon joinString "";
-				_parsed1Rnd = splashRounds joinString "";
-				_parsed1Rad = splashRadius joinString "";
-				_parsedLat = parseNumber _parsed1Lat;
-				_parsedLon = parseNumber _parsed1Lon;
-				_parsedRounds = parseNumber _parsed1Rnd;
-				_parsedRadius = parseNumber _parsed1Rad;
-				shot1Data = true;
-				systemChat "shot 1 confirmed - press 1 for another or 2 to execute or / to cancel";
-			};
-			case (!shot2Data):  {
-				_parsed1Lat2 = splashCoordsLat joinString "";
-				_parsed1Lon2 = splashCoordsLon joinString "";
-				_parsed1Rnd2 = splashRounds joinString "";
-				_parsed1Rad2 = splashRadius joinString "";
-				_parsedLat2 = parseNumber _parsed1Lat2;
-				_parsedLon2 = parseNumber _parsed1Lon2;
-				_parsedRounds2 = parseNumber _parsed1Rnd2;
-				_parsedRadius2 = parseNumber _parsed1Rad2;
-				shot2Data = true;
-				systemChat "shot 1 and 2 confirmed - press 1 for another or 2 to execute or / to cancel";
-			};
-			case (!shot3Data):  {
-				_parsed1Lat3 = splashCoordsLat joinString "";
-				_parsed1Lon3 = splashCoordsLon joinString "";
-				_parsed1Rnd3 = splashRounds joinString "";
-				_parsed1Rad3 = splashRadius joinString "";
-				_parsedLat3 = parseNumber _parsed1Lat3;
-				_parsedLon3 = parseNumber _parsed1Lon3;
-				_parsedRounds3 = parseNumber _parsed1Rnd3;
-				_parsedRadius3 = parseNumber _parsed1Rad3;
-				shot3Data = true;
-				systemChat "shot 1 2 and 3 confirmed - press 1 for one more or 2 to execute or / to cancel";
-			};
-			case (!shot4Data):  {
-				_parsed1Lat4 = splashCoordsLat joinString "";
-				_parsed1Lon4 = splashCoordsLon joinString "";
-				_parsed1Rnd4 = splashRounds joinString "";
-				_parsed1Rad4 = splashRadius joinString "";
-				_parsedLat4 = parseNumber _parsed1Lat4;
-				_parsedLon4 = parseNumber _parsed1Lon4;
-				_parsedRounds4 = parseNumber _parsed1Rnd4;
-				_parsedRadius4 = parseNumber _parsed1Rad4;
-				shot4Data = true;
-				systemChat "4 shots confirmed - that's it - press 2 to execute of / to cancel";
-			};
-			default {hint "no more mate"};
 		};
 	};
 
