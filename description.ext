@@ -37,6 +37,28 @@ class Header
 	maxPlayers = 10;	// maximum number of players the mission supports
 };
 
+class CfgSounds
+{
+	sounds[] = {};
+	
+	class info
+	{
+		// name = "info";
+		// sound[] = {"voiceActivatedArty\sound\radio.ogg", 0.3,1};
+		sound[] = {"\a3\Ui_f\data\Sound\CfgIngameUI\hint",0.891251,1};
+		titles[] = {};
+	};
+};
+
+
+
+
+
+
+
+
+
+
 // below is a placeholder for some audio shit...
 
 /*

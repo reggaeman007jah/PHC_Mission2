@@ -28,9 +28,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 0;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -40,9 +42,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 1;
+			playSound '3DEN_notificationDefault';
 		};		
 	}"];
 
@@ -52,9 +56,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 2;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -64,9 +70,11 @@ if (VACF_numericalInputbool) then {
 		
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 3;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -76,9 +84,11 @@ if (VACF_numericalInputbool) then {
 		
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 4;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -88,9 +98,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 5;
+			playSound '3DEN_notificationDefault';
 		};		
 	}"];
 
@@ -100,9 +112,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 6;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -112,9 +126,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 7;
+			playSound '3DEN_notificationDefault';
 		};		
 	}"];
 
@@ -124,9 +140,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 8;
+			playSound '3DEN_notificationDefault';
 		};	
 	}"];
 
@@ -136,9 +154,11 @@ if (VACF_numericalInputbool) then {
 
 		if (VACF_headingBool) then {
 			VACF_Heading pushback 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (VACF_distanceBool) then {
 			VACF_Distance pushback 9;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 };

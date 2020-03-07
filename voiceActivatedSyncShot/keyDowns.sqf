@@ -31,27 +31,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 0;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -65,27 +73,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 1;
+			playSound '3DEN_notificationDefault';
 		};
 
 		if (executeSyncShotBool) then {
@@ -103,27 +119,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 2;
+			playSound '3DEN_notificationDefault';
 		};
 
 	}"];
@@ -138,27 +162,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 3;
+			playSound '3DEN_notificationDefault';
 		};
 
 	}"];
@@ -173,27 +205,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 4;
+			playSound '3DEN_notificationDefault';
 		};
 
 	}"];
@@ -204,27 +244,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 5;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -234,27 +282,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 6;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -264,27 +320,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 7;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -294,27 +358,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 8;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 
@@ -324,27 +396,35 @@ if (numericalInputBool) then {
 
 		if (shot1LatBool) then {
 			splash1CoordsLat pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot1LonBool) then {
 			splash1CoordsLon pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LatBool) then {
 			splash2CoordsLat pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot2LonBool) then {
 			splash2CoordsLon pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LatBool) then {
 			splash3CoordsLat pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot3LonBool) then {
 			splash3CoordsLon pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LatBool) then {
 			splash4CoordsLat pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 		if (shot4LonBool) then {
 			splash4CoordsLon pushBack 9;
+			playSound '3DEN_notificationDefault';
 		};
 	}"];
 };
